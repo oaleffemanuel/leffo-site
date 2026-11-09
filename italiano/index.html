@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Italiano Sozinho em 30 Dias · Leffo</title>
+<meta name="description" content="Ebook com 30 dias de italiano, cerca de 20 minutos por dia, para sustentar uma conversa curta e simples, estudando sozinho.">
+<meta property="og:title" content="Italiano Sozinho em 30 Dias">
+<meta property="og:description" content="Sua primeira conversa em italiano, em 20 minutos por dia.">
+<meta property="og:image" content="https://lf.korium.co/italiano/img/og.jpg">
+<meta property="og:url" content="https://lf.korium.co/italiano/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1E3A2F">
+<link rel="preload" href="fonts/Gloock.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/RobotoCondensed.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/capa.webp" type="image/webp">
+<script>document.documentElement.classList.add("aguardando")</script>
+<style>
+@font-face { font-family: "Gloock"; src: url("fonts/Gloock.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Roboto Condensed"; src: url("fonts/RobotoCondensed.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+
+:root {
+  --verde: #1E3A2F;
+  --verde-2: #274a3c;
+  --creme: #FBE7A1;
+  --creme-claro: #FDF3CC;
+  --papel: #FFFCF2;
+  --tinta: #1b2a23;
+  --suave: #55655c;
+  --linha: #dcd4b4;
+  --raio: 12px;
+  --sombra: 0 14px 34px rgba(30, 58, 47, .16);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif; font-size: 19px; line-height: 1.45; color: var(--tinta); background: var(--papel); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+section { padding: 44px 0; }
+@media (min-width: 720px) { section { padding: 60px 0; } }
+p + p { margin-top: .75em; }
+h1, h2, h3, h4 { font-family: "Gloock", Georgia, serif; font-weight: 400; }
+h2 { font-size: clamp(32px, 8.4vw, 46px); line-height: 1.08; color: var(--verde); margin-bottom: 16px; }
+h3 { font-size: 23px; line-height: 1.18; color: var(--verde); }
+i[lang="it"] { font-style: normal; font-weight: 700; }
+.centro { text-align: center; }
+.verde { background: var(--verde); color: var(--papel); }
+.verde h2, .verde h3 { color: var(--creme); }
+.verde i[lang="it"] { color: var(--creme); }
+.tinta { background: var(--creme-claro); }
+.lead { font-size: 21px; line-height: 1.35; }
+
+/* botão */
+.cta { display: inline-block; min-width: 260px; padding: 18px 36px; border-radius: var(--raio); text-align: center; text-decoration: none; font-weight: 700; font-size: 21px; color: var(--creme); background: var(--verde); box-shadow: var(--sombra); transition: transform .15s ease, background .2s ease; }
+.cta:hover { background: var(--verde-2); transform: translateY(-1px); }
+.cta:active { transform: scale(.98); }
+.cta.claro { color: var(--verde); background: var(--creme); }
+.cta.claro:hover { background: #fff0bd; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--verde); outline-offset: 3px; }
+.verde a:focus-visible, .verde summary:focus-visible { outline-color: var(--creme); }
+.micro { margin-top: 10px; font-size: 16px; opacity: .85; }
+.acao { margin-top: 30px; text-align: center; }
+
+/* o preço só aparece depois que a variante do teste é escolhida, para não trocar na frente do visitante */
+.preco { transition: opacity .3s; }
+.aguardando .preco { opacity: 0; }
+.aguardando [data-checkout] { pointer-events: none; opacity: .55; }
+
+/* topo */
+.hero { padding: 30px 0 44px; text-align: center; }
+.hero .marca { font-family: "Gloock", Georgia, serif; font-size: 24px; color: var(--creme); margin-bottom: 14px; }
+h1 { font-size: clamp(47px, 13.6vw, 72px); line-height: 1.02; color: var(--creme); }
+.junto { white-space: nowrap; }
+.sub { margin-top: 12px; font-family: "Gloock", Georgia, serif; font-size: clamp(22px, 5.8vw, 30px); line-height: 1.18; color: var(--papel); }
+.hero .capa { width: 150px; margin: 18px auto; border-radius: 6px; box-shadow: 0 0 0 1px rgba(251, 231, 161, .4), 0 16px 34px rgba(0, 0, 0, .4); }
+.cond { max-width: 34em; margin: 12px auto 20px; font-size: 18px; line-height: 1.35; }
+@media (min-width: 860px) {
+  .hero { padding: 0; text-align: left; }
+  .hero-grade { display: grid; grid-template-columns: 1.05fr .95fr; min-height: min(100dvh, 780px); }
+  .hero-texto { align-self: center; justify-self: end; width: min(620px, 100%); padding: 44px 48px; }
+  .hero-texto .sub, .cond { margin-left: 0; }
+  .hero-foto { position: relative; display: grid; place-items: center; background: url("img/ponte-1-1400.webp") 40% 50% / cover; }
+  .hero-foto::before { content: ""; position: absolute; inset: 0; background: rgba(30, 58, 47, .28); }
+  .hero .capa { position: relative; width: 320px; margin: 0; transform: rotate(-2deg); }
+}
+@media (max-width: 859px) {
+  .hero-foto { display: contents; }
+  .hero-grade { display: flex; flex-direction: column; }
+  .hero-texto { display: contents; }
+  .hero .marca { order: 1; } .hero h1 { order: 2; } .hero .sub { order: 3; } .hero .capa { order: 4; } .hero .cond { order: 5; } .hero .cta { order: 6; align-self: center; } .hero .micro { order: 7; }
+  .hero .marca, .hero h1, .hero .sub, .hero .cond, .hero .micro { padding-left: 20px; padding-right: 20px; }
+}
+
+/* a cena */
+.cena h2 i[lang="it"] { font-weight: 400; background: var(--creme); padding: 0 .18em; border-radius: 6px; }
+.tres { display: grid; gap: 12px; margin: 26px 0 22px; }
+.tres > div { padding: 18px 20px; background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); }
+.tres h3 { margin-bottom: 4px; font-size: 22px; }
+.tres p { font-size: 18px; line-height: 1.35; color: var(--suave); }
+.tres i[lang="it"] { color: var(--verde); }
+@media (min-width: 720px) { .tres { grid-template-columns: repeat(2, 1fr); } .tres > div:last-child { grid-column: span 2; } }
+
+/* bullets */
+.bullets { list-style: none; margin-top: 8px; display: grid; gap: 15px; }
+.bullets li { position: relative; padding-left: 34px; line-height: 1.32; }
+.bullets li::before { content: ""; position: absolute; left: 0; top: 2px; width: 22px; height: 22px; border-radius: 50%; background: var(--verde); }
+.bullets li::after { content: ""; position: absolute; left: 7.5px; top: 6px; width: 5px; height: 10px; border: solid var(--creme); border-width: 0 2px 2px 0; transform: rotate(40deg); }
+.bullets .dia { white-space: nowrap; color: var(--suave); font-size: 16px; }
+.bullets .mais { font-weight: 700; }
+.parte2 { margin: 28px 0 12px; font-size: clamp(25px, 6.4vw, 30px); }
+@media (min-width: 900px) { .largo { max-width: 1020px; } .bullets { grid-template-columns: 1fr 1fr; gap: 18px 44px; } }
+
+/* como funciona */
+.numeros { display: flex; justify-content: space-between; gap: 12px; margin: 24px 0; }
+.numeros b { display: block; font-family: "Gloock", Georgia, serif; font-weight: 400; font-size: clamp(42px, 12vw, 56px); line-height: 1; color: var(--creme); }
+.numeros span { font-size: 16px; }
+.grade { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; max-width: 420px; margin-bottom: 26px; }
+.grade i { aspect-ratio: 1; border: 1px solid rgba(251, 231, 161, .5); border-radius: 3px; }
+.grade i.m { background: rgba(251, 231, 161, .32); }
+.grade i.f { background: var(--creme); border-color: var(--creme); }
+.linha { list-style: none; }
+.linha li { display: grid; grid-template-columns: 68px 1fr; gap: 10px; padding: 11px 0; border-top: 1px solid rgba(251, 231, 161, .22); line-height: 1.3; font-size: 18px; }
+.linha b { font-family: "Gloock", Georgia, serif; font-weight: 400; color: var(--creme); font-size: 20px; }
+.sem { margin-top: 26px; font-size: 19px; }
+.sem strong { color: var(--creme); font-weight: 700; }
+
+/* promessa */
+.contas { display: grid; gap: 14px; margin-top: 24px; }
+.contas > div { padding: 22px 20px; border-radius: var(--raio); }
+.sim { background: var(--verde); color: var(--papel); }
+.sim h3 { color: var(--creme); }
+.nao { background: #fff; border: 1px solid var(--linha); }
+.contas h3 { margin-bottom: 8px; }
+.contas ul { list-style: none; }
+.contas li { position: relative; padding-left: 16px; margin-top: 8px; font-size: 18px; line-height: 1.3; }
+.contas li::before { content: ""; position: absolute; left: 0; top: .5em; width: 7px; height: 7px; background: var(--creme); }
+.nao li::before { background: none; border: 1.5px solid var(--verde); }
+.nao li strong { font-weight: 700; }
+.filtro { margin-top: 20px; padding-left: 14px; border-left: 3px solid var(--verde); font-weight: 500; }
+@media (min-width: 720px) { .contas { grid-template-columns: 1fr 1fr; } }
+
+/* amostra */
+.paginas { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 20px 16px; margin: 20px -20px 8px; scrollbar-width: none; }
+.paginas::-webkit-scrollbar { display: none; }
+.paginas img { flex: none; width: 52%; max-width: 230px; scroll-snap-align: center; border-radius: 4px; box-shadow: var(--sombra); }
+.folha { background: var(--papel); border: 1px solid var(--linha); border-radius: var(--raio); padding: 24px 20px; box-shadow: var(--sombra); }
+.folha h3 { font-size: 34px; line-height: 1.1; }
+.folha h4 { font-size: 21px; color: var(--verde); margin: 18px 0 6px; }
+.folha p { font-size: 18px; line-height: 1.38; }
+.folha i[lang="it"] { color: var(--verde); }
+.dia-num { font-weight: 700; color: var(--suave); }
+.objetivo { margin-top: 2px; }
+.ganhou { margin-top: 12px; padding: 10px 14px; background: var(--creme-claro); border-radius: 8px; font-size: 17px; }
+.ganhou b { color: var(--verde); }
+.falas { list-style: none; }
+.falas li { padding: 8px 0; border-top: 1px solid var(--linha); line-height: 1.25; }
+.falas em { display: block; font-style: normal; font-size: 15px; color: var(--suave); }
+.falas b { display: block; font-weight: 700; color: var(--verde); }
+.falas span { display: block; font-size: 17px; color: var(--suave); }
+.resto summary { cursor: pointer; margin-top: 12px; font-weight: 700; color: var(--verde); }
+.chegada { margin-top: 14px; }
+.chegada > summary { cursor: pointer; padding: 15px 18px; background: var(--verde); border-radius: var(--raio); text-align: center; font-weight: 700; color: var(--creme); }
+.chegada[open] > summary { margin-bottom: 12px; }
+
+/* autor */
+.autor p { font-size: 20px; line-height: 1.4; }
+.assina { margin-top: 14px; font-family: "Gloock", Georgia, serif; font-size: 26px; color: var(--verde); }
+
+/* oferta */
+.caixa { position: relative; background: var(--papel); color: var(--tinta); border-radius: var(--raio); padding: 28px 22px 26px; box-shadow: 0 18px 40px rgba(0, 0, 0, .3); }
+.oferta-topo { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: center; margin-bottom: 18px; }
+.oferta-topo img { border-radius: 4px; box-shadow: var(--sombra); }
+.caixa h2 { color: var(--verde); font-size: clamp(27px, 7vw, 36px); margin-bottom: 4px; }
+.subtitulo { font-size: 17px; line-height: 1.25; }
+.caixa ul { list-style: none; display: grid; gap: 8px; }
+.caixa li { position: relative; padding-left: 27px; font-size: 18px; line-height: 1.28; }
+.caixa li::before { content: ""; position: absolute; left: 0; top: 2px; width: 18px; height: 18px; border-radius: 50%; background: var(--verde); }
+.caixa li::after { content: ""; position: absolute; left: 6px; top: 5px; width: 4px; height: 8px; border: solid var(--creme); border-width: 0 2px 2px 0; transform: rotate(40deg); }
+.valor { margin: 22px 0 16px; text-align: center; }
+.valor b { font-family: "Gloock", Georgia, serif; font-weight: 400; font-size: 72px; line-height: 1; color: var(--verde); }
+.valor b small { font-size: 28px; vertical-align: 30px; margin-right: 4px; }
+.valor p { font-size: 18px; }
+.caixa .cta { display: block; width: 100%; }
+.nota { margin-top: 10px; font-size: 16px; text-align: center; color: var(--suave); }
+.garantia { display: grid; grid-template-columns: 78px 1fr; gap: 16px; align-items: start; margin-top: 18px; padding: 22px 20px; border: 1px dashed var(--creme); border-radius: var(--raio); }
+.selo { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 78px; height: 78px; border-radius: 50%; background: var(--creme); color: var(--verde); font-family: "Gloock", Georgia, serif; line-height: 1; }
+.selo b { font-weight: 400; font-size: 32px; }
+.selo span { font-family: "Roboto Condensed", sans-serif; font-weight: 700; font-size: 13px; }
+.garantia h3 { margin-bottom: 6px; }
+.garantia p { font-size: 18px; line-height: 1.35; }
+@media (max-width: 460px) { .garantia { grid-template-columns: 1fr; } }
+
+/* perguntas */
+details.q { border-top: 1px solid var(--linha); padding: 15px 0; }
+details.q:last-of-type { border-bottom: 1px solid var(--linha); }
+details.q > summary { cursor: pointer; list-style: none; position: relative; padding-right: 28px; font-family: "Gloock", Georgia, serif; font-size: 21px; line-height: 1.2; color: var(--verde); }
+details.q > summary::-webkit-details-marker { display: none; }
+details.q > summary::after { content: "+"; position: absolute; right: 2px; top: -4px; font-size: 28px; }
+details.q[open] > summary::after { content: "×"; }
+details.q p { margin-top: 8px; font-size: 18px; line-height: 1.38; }
+
+/* fim */
+.fim-foto { width: 100%; height: clamp(170px, 34vw, 340px); object-fit: cover; object-position: 50% 45%; }
+.fim { padding-top: 36px; text-align: center; }
+.fim .lead { max-width: 28em; margin: 0 auto; }
+
+footer { padding: 28px 20px 40px; text-align: center; font-size: 16px; line-height: 1.7; background: var(--verde); color: var(--creme-claro); }
+footer .marca { font-family: "Gloock", Georgia, serif; font-size: 23px; color: var(--creme); }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } .cta:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+<header class="hero verde">
+  <div class="hero-grade">
+    <div class="hero-texto">
+      <p class="marca">Leffo</p>
+      <h1>Italiano Sozinho <span class="junto">em 30 Dias</span></h1>
+      <p class="sub">Sua primeira conversa em italiano, em 20 minutos por dia</p>
+      <p class="cond">Se você fizer os 30 dias falando em voz alta, vai conseguir sustentar uma conversa curta e simples, de 2 a 3 minutos, com pausas e com erros, mas com uma pessoa de verdade.</p>
+      <a class="cta claro" href="#oferta">Quero o ebook</a>
+      <p class="micro">Ebook em PDF, com 30 dias de garantia.</p>
+    </div>
+    <div class="hero-foto"><img class="capa" src="img/capa.webp" width="720" height="1018" alt="Capa do ebook Italiano Sozinho em 30 Dias"></div>
+  </div>
+</header>
+
+<section class="cena">
+  <div class="wrap">
+    <h2>Aí alguém pergunta <i lang="it">di dove sei?</i></h2>
+    <p class="lead">A sua cabeça fica em branco, você sorri e torce para a pessoa mudar de assunto.</p>
+    <p>Você já baixou o aplicativo, salvou o vídeo, comprou caderno novo, fez três horas num sábado e passou duas semanas sem abrir nada, e antes de concluir que não leva jeito vale olhar o que você andou treinando, porque quem larga costuma reconhecer pelo menos uma destas três cenas.</p>
+    <div class="tres">
+      <div><h3>A regra antes da frase</h3><p>Você decora o verbo <i lang="it">essere</i> e faz os exercícios, mas continua sem conseguir dizer bom dia sem pensar, porque a regra explica uma frase que você ainda não tem.</p></div>
+      <div><h3>Sessões longas e raras</h3><p>Três horas no sábado parecem coisa séria, só que a semana passa, a matéria acumula e a vontade some, enquanto vinte minutos quase sempre cabem no dia.</p></div>
+      <div><h3>Palavras soltas</h3><p><i lang="it">Casa, cane, gatto, libro</i>: a lista dá sensação de progresso, mas numa conversa o que você usa são frases.</p></div>
+    </div>
+    <p>Ninguém aprendeu português por tabela, porque a gente começa pela frase que resolve a vida, e é por aí que este ebook começa.</p>
+  </div>
+</section>
+
+<section class="tinta">
+  <div class="wrap largo">
+    <h2>O que você vai encontrar lá dentro</h2>
+    <ul class="bullets">
+      <li>Você aprende o que dizer no segundo em que não entendeu nada, sem voltar para o português <span class="dia">(dia 6)</span></li>
+      <li>Você descobre por que não deve pedir com <i lang="it">voglio</i> numa loja italiana e qual é a palavra que resolve todos os pedidos <span class="dia">(dia 15)</span></li>
+      <li><i lang="it">Anch’io</i> parece servir para todo “eu também”, mas há um caso em que a resposta é outra, e é justamente quando vocês falam do que gostam <span class="dia">(dia 26)</span></li>
+      <li><i lang="it">Ciao</i> pode soar íntimo demais com um desconhecido, e você aprende o que dizer no lugar <span class="dia">(dia 1)</span></li>
+      <li>Você aprende a falar do futuro sem precisar aprender o tempo futuro <span class="dia">(dia 24)</span></li>
+      <li>As 4 armadilhas de pronúncia de quem fala português do Brasil aparecem explicadas, com o som certo no lugar de cada uma</li>
+      <li>Você descobre as palavras que compram tempo quando trava, em vez de um silêncio longo <span class="dia">(dia 25)</span></li>
+      <li>Você entende por que em italiano é a pizza que agrada você, e isso resolve <i lang="it">mi piace</i> e <i lang="it">mi piacciono</i> de uma vez <span class="dia">(dia 12)</span></li>
+      <li>Você treina três despedidas, porque saber encerrar uma conversa é o que tira o medo de começar <span class="dia">(dia 27)</span></li>
+      <li>Você faz uma gravação no dia 7 e a ouve de novo no dia 28, para comparar com a sua própria voz</li>
+      <li>Você encontra onde achar uma pessoa de verdade para a conversa e recebe a mensagem pronta em italiano para convidar <span class="dia">(dias 29 e 30)</span></li>
+      <li class="mais">E mais: a conversa inteira do dia 30 vem escrita logo no começo, para você saber desde o primeiro dia aonde está indo</li>
+    </ul>
+    <h3 class="parte2">E na segunda parte, para depois do dia 30</h3>
+    <ul class="bullets">
+      <li>Você tem frases para doze situações do dia a dia, do mercado à farmácia, do hotel à igreja e ao telefone</li>
+      <li>Um vocabulário organizado por tema deixa você trocar palavras nas frases que já sabe</li>
+      <li>Um guia dos verbos mais usados no presente explica os três modelos regulares e onze irregulares, sempre em comparação com o português</li>
+      <li>Seis histórias a mais de Ida Baccini, adaptadas para iniciante, completam as dez do livro</li>
+      <li>Uma sugestão de plano para o segundo mês segue em ritmo mais leve, usando só o que está no livro e sem prometer nível nem resultado</li>
+    </ul>
+    <p class="acao"><a class="cta" href="#oferta">Quero o ebook</a></p>
+  </div>
+</section>
+
+<section class="verde">
+  <div class="wrap">
+    <h2>Trinta pedaços pequenos, uma conversa só</h2>
+    <p>O ebook mostra logo no começo a conversa do dia 30 e cada dia leva até ela, ocupando uma ou duas páginas e trazendo uma pequena vitória, algo que você já consegue fazer naquele mesmo dia.</p>
+    <div class="numeros">
+      <div><b>30</b><span>dias</span></div>
+      <div><b>20</b><span>minutos por dia</span></div>
+      <div><b>10</b><span>horas no total</span></div>
+    </div>
+    <div class="grade" aria-hidden="true"><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i class="m"></i><i class="f"></i></div>
+    <ul class="linha">
+      <li><b>Dia 1</b><span>Você cumprimenta e diz o seu nome, em cerca de 20 minutos que dá para fazer hoje à noite.</span></li>
+      <li><b>Dia 7</b><span>Você se apresenta em um minuto, sem olhar, e grava.</span></li>
+      <li><b>Dia 14</b><span>Você fala da sua vida por cerca de um minuto, sem olhar.</span></li>
+      <li><b>Dia 21</b><span>Você grava três cenas sem olhar: um café, uma estação e uma loja.</span></li>
+      <li><b>Dia 28</b><span>Você grava de novo e compara com a gravação do dia 7.</span></li>
+      <li><b>Dia 29</b><span>Você ensaia a conversa e manda a mensagem para combinar.</span></li>
+      <li><b>Dia 30</b><span>Você tem a sua primeira conversa em italiano.</span></li>
+    </ul>
+    <p class="sem">Aqui não tem aula para assistir, nem lista de verbos para decorar antes de falar, nem mensalidade, e você só precisa de um celular e de um pedaço de papel. <strong>A única coisa que não sai da sua conta é falar sozinho em voz alta, todo dia.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que você consegue, e o que não</h2>
+    <p class="lead">A promessa é uma conversa curta e simples, de 2 a 3 minutos, e o critério é conseguir ir e voltar nela, sem a preocupação de falar bonito.</p>
+    <div class="contas">
+      <div class="sim">
+        <h3>Nessa conversa, você</h3>
+        <ul>
+          <li>cumprimenta e se apresenta</li>
+          <li>diz de onde é e o que faz</li>
+          <li>faz e responde perguntas básicas do dia a dia</li>
+          <li>pede um café ou o caminho até um lugar</li>
+          <li>pede que a pessoa repita ou fale mais devagar</li>
+        </ul>
+      </div>
+      <div class="nao">
+        <h3>O que o ebook não faz</h3>
+        <ul>
+          <li><strong>Não tem áudio</strong> e não escreve a pronúncia de cada frase</li>
+          <li>Não faz você entender um filme ou italianos falando rápido</li>
+          <li>Não ensina a gramática toda, só o que cada dia pede</li>
+          <li>Não prepara para certificado nem prova</li>
+          <li>Não marca a conversa por você: indica onde achar alguém, e quem combina é você</li>
+        </ul>
+      </div>
+    </div>
+    <p class="filtro">Se você não topa falar sozinho em voz alta, a conversa do dia 30 não vai acontecer, e é melhor não comprar.</p>
+  </div>
+</section>
+
+<section class="tinta">
+  <div class="wrap">
+    <h2>Antes de pagar, leia</h2>
+    <p>Ainda não tenho depoimentos para mostrar, porque este é o primeiro produto da Leffo, e o que posso mostrar é o próprio ebook.</p>
+    <div class="paginas"><img src="img/pag-chegada.webp" width="520" height="735" loading="lazy" alt="Página do ebook com a conversa do dia 30"><img src="img/pag-dia6.webp" width="520" height="735" loading="lazy" alt="Página do dia 6 do ebook"><img src="img/pag-leitura.webp" width="520" height="735" loading="lazy" alt="Página do ebook sobre como o italiano se lê"></div>
+    <!-- Trechos reais do ebook, gerados de leffo/produtos/italiano-30-dias/src/ (semana1.txt, dia 6; 00-abertura.html, O ponto de chegada). -->
+    <article class="folha">
+      <p class="dia-num">Dia 6</p>
+      <h3 lang="it">Non ho capito</h3>
+      <p class="objetivo">Este é o dia mais importante da semana, porque a partir dele não entender deixa de ser o fim da conversa.</p>
+      <p class="ganhou"><b>Hoje você já consegue:</b> Pedir que repitam, pedir mais devagar e perguntar como se diz uma palavra.</p>
+      <h4>Frases de hoje</h4>
+      <ul class="falas"><li><b lang="it">Non ho capito.</b><span>Não entendi.</span></li><li><b lang="it">Puoi ripetere, per favore?</b><span>Você pode repetir, por favor?</span></li><li><b lang="it">Più piano, per favore.</b><span>Mais devagar, por favor.</span></li><li><b lang="it">Come si dice “janela” in italiano?</b><span>Como se diz “janela” em italiano?</span></li><li><b lang="it">Cosa vuol dire?</b><span>O que quer dizer?</span></li><li><b lang="it">Parlo solo un po’ di italiano.</b><span>Falo só um pouco de italiano.</span></li></ul>
+      <details class="resto"><summary>Ver o diálogo e a observação do dia</summary>
+      <h4>Diálogo</h4>
+      <ul class="falas"><li><em>Giulia</em><b lang="it">Ciao! Di dove sei?</b><span>Oi! De onde você é?</span></li><li><em>Ana</em><b lang="it">Scusa, non ho capito. Puoi ripetere, per favore?</b><span>Desculpa, não entendi. Você pode repetir, por favor?</span></li><li><em>Giulia</em><b lang="it">Certo! Di dove sei?</b><span>Claro! De onde você é?</span></li><li><em>Ana</em><b lang="it">Ah! Sono brasiliana. Parlo solo un po’ di italiano.</b><span>Ah! Sou brasileira. Falo só um pouco de italiano.</span></li><li><em>Giulia</em><b lang="it">Non ti preoccupare! Parli bene.</b><span>Não se preocupe! Você fala bem.</span></li><li><em>Ana</em><b lang="it">Grazie mille!</b><span>Muito obrigada!</span></li></ul>
+      <h4>Observação</h4>
+      <p>Com quem você trata por <i lang="it">Lei</i>, as mesmas frases mudam um pouco e fica <i lang="it">Scusi, può ripetere, per favore?</i>, pela lógica do dia 3: <i lang="it">puoi</i> e <i lang="it">scusa</i> para <i lang="it">tu</i>, <i lang="it">può</i> e <i lang="it">scusi</i> para <i lang="it">Lei</i>.</p>
+      </details>
+      <h4>Fale em voz alta</h4>
+      <p>Estas frases seguram qualquer conversa, então vale gastar os 5 minutos inteiros nelas, dizendo cada uma até conseguir falar sem olhar, porque mesmo que você só soubesse isto no dia 30 ainda conseguiria pedir ajuda.</p>
+    </article>
+    <details class="chegada">
+      <summary>Ler a conversa do dia 30 inteira</summary>
+      <div class="folha"><ul class="falas"><li><em>Ana</em><b lang="it">Ciao! Mi chiamo Ana. E tu, come ti chiami?</b><span>Oi! Eu me chamo Ana. E você, como se chama?</span></li><li><em>Giulia</em><b lang="it">Ciao, Ana! Mi chiamo Giulia. Piacere!</b><span>Oi, Ana! Eu me chamo Giulia. Muito prazer!</span></li><li><em>Ana</em><b lang="it">Piacere! Scusa, parlo solo un po’ di italiano.</b><span>Muito prazer! Desculpa, falo só um pouco de italiano.</span></li><li><em>Giulia</em><b lang="it">Non ti preoccupare! Di dove sei?</b><span>Não se preocupe! De onde você é?</span></li><li><em>Ana</em><b lang="it">Sono brasiliana, sono di Belo Horizonte. E tu?</b><span>Sou brasileira, de Belo Horizonte. E você?</span></li><li><em>Giulia</em><b lang="it">Sono di Bologna. Che lavoro fai?</b><span>Sou de Bolonha. Com o que você trabalha?</span></li><li><em>Ana</em><b lang="it">Sono insegnante. E tu?</b><span>Sou professora. E você?</span></li><li><em>Giulia</em><b lang="it">Lavoro in un ufficio. Perché studi italiano?</b><span>Trabalho em um escritório. Por que você estuda italiano?</span></li><li><em>Ana</em><b lang="it">Perché mi piace la lingua e vorrei visitare l’Italia. Sei mai stata in Brasile?</b><span>Porque eu gosto da língua e gostaria de visitar a Itália. Você já esteve no Brasil?</span></li><li><em>Giulia</em><b lang="it">No, mai. Hai figli?</b><span>Não, nunca. Você tem filhos?</span></li><li><em>Ana</em><b lang="it">Sì, ho due figli. E tu?</b><span>Sim, tenho dois filhos. E você?</span></li><li><em>Giulia</em><b lang="it">Io no, ma ho un fratello e due sorelle. Cosa fai nel fine settimana?</b><span>Eu não, mas tenho um irmão e duas irmãs. O que você faz no fim de semana?</span></li><li><em>Ana</em><b lang="it">Il sabato esco con gli amici e la domenica vado a messa. E tu?</b><span>Aos sábados saio com os amigos e aos domingos vou à missa. E você?</span></li><li><em>Giulia</em><b lang="it">Di solito vado a trovare i miei genitori in campagna.</b><span>Normalmente vou visitar os meus pais no campo.</span></li><li><em>Ana</em><b lang="it">Scusa, non ho capito. Puoi ripetere più piano, per favore?</b><span>Desculpa, não entendi. Você pode repetir mais devagar, por favor?</span></li><li><em>Giulia</em><b lang="it">Certo! Vado a trovare i miei genitori.</b><span>Claro! Vou visitar os meus pais.</span></li><li><em>Ana</em><b lang="it">Ah, che bello! Giulia, devo andare. È stato un piacere!</b><span>Ah, que legal! Giulia, preciso ir. Foi um prazer!</span></li><li><em>Giulia</em><b lang="it">Anche per me! Buona giornata!</b><span>Para mim também! Bom dia pra você!</span></li><li><em>Ana</em><b lang="it">Grazie mille! Ciao, a presto!</b><span>Muito obrigada! Tchau, até breve!</span></li></ul></div>
+    </details>
+  </div>
+</section>
+
+<section class="autor">
+  <div class="wrap">
+    <h2>Quem escreveu</h2>
+    <p>Eu já estive onde você está, porque aprendi italiano sozinho e hoje estudo francês, de modo que conheço de perto a parte de abrir a boca sem saber direito o que vai sair.</p>
+    <p>Não sou professor nem nativo, e escrevi este ebook do mesmo lado da mesa que você, que é o lado em que eu fico, para irmos juntos, um dia de cada vez.</p>
+    <p class="assina">Leffo</p>
+  </div>
+</section>
+
+<section class="verde" id="oferta">
+  <div class="wrap">
+    <div class="caixa">
+      <div class="oferta-topo">
+        <img src="img/capa.webp" width="720" height="1018" loading="lazy" alt="Capa do ebook">
+        <div><h2>Italiano Sozinho em 30 Dias</h2><p class="subtitulo">Sua primeira conversa em italiano, em 20 minutos por dia</p></div>
+      </div>
+      <ul>
+        <li>Os 30 dias em PDF, no celular, no tablet ou no computador</li>
+        <li>A conversa do dia 30, escrita logo no começo</li>
+        <li>Dez histórias italianas de 1882, de Ida Baccini, adaptadas para iniciante, para ler e responder de cabeça</li>
+        <li>Uma parte sobre métodos de aprender idioma, com as cinco ideias do caminho</li>
+        <li>Como o italiano se lê, com as armadilhas de quem fala português</li>
+        <li>Onde achar com quem conversar, com a mensagem pronta para combinar</li>
+        <li>Checklist dos 30 dias</li>
+        <li>A segunda parte, com frases para doze situações, vocabulário por tema, guia de verbos e plano para o segundo mês</li>
+      </ul>
+      <div class="valor preco">
+        <b><small>R$</small><span data-price>27</span></b>
+        <p>pagamento único, no Pix ou no cartão</p>
+      </div>
+      <a class="cta" href="https://pay.hub.la/HZlYwArjvC44brPmHeFR" data-checkout>Quero o ebook</a>
+      <p class="nota">Você é levado ao checkout da Hubla e recebe o acesso por e-mail.</p>
+    </div>
+    <div class="garantia">
+      <div class="selo"><b>30</b><span>DIAS</span></div>
+      <div>
+        <h3>30 dias de garantia</h3>
+        <p>O prazo cobre o plano inteiro, de modo que dá para chegar ao dia 30 antes de decidir, e se achar que não valeu, basta pedir o reembolso pela plataforma nos primeiros 7 dias, ou pelo e-mail que está na área de membros até 30 dias depois da compra, para receber o valor integral sem precisar explicar o motivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Perguntas</h2>
+    <details class="q"><summary>Sem áudio, como eu vou falar?</summary><p>Lendo em voz alta e repetindo, porque o ebook não tem áudio, o italiano se lê quase sempre como se escreve e uma parte do livro mostra as combinações que mudam de som, enquanto o som de verdade você encontra na conversa, e por isso, se você precisa ouvir cada frase antes de falar, este não é o material certo.</p></details>
+    <details class="q"><summary>Serve para quem nunca estudou italiano?</summary><p>Foi feito para isso, ou para quem tentou e parou no começo, e se você já se vira em italiano ele não é para você.</p></details>
+    <details class="q"><summary>E se eu perder um dia?</summary><p>Continue de onde parou, sem dobrar o dia seguinte, porque não há nada de errado em chegar ao dia 30 depois de 35 ou 40 dias corridos.</p></details>
+    <details class="q"><summary>Por que comprar de quem não é professor?</summary><p>Você não está comprando uma aula, e sim a ordem em que eu colocaria as coisas para quem começa do nada, escrita por quem também aprendeu sozinho, e a melhor forma de julgar é ler a conversa do dia 30 e ver se é isso que você quer.</p></details>
+    <details class="q"><summary>Como eu recebo?</summary><p>Depois que o pagamento é confirmado, você recebe por e-mail o acesso ao PDF, e se ele não chegar, olhe o spam e me chame no direct do Instagram <a href="https://www.instagram.com/leffo__/">@leffo__</a>.</p></details>
+  </div>
+</section>
+
+<img class="fim-foto" src="img/cafe-1-900.webp" srcset="img/cafe-1-900.webp 900w, img/cafe-1-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="Balcão de um bar com máquina de espresso e xícaras empilhadas">
+<section class="fim">
+  <div class="wrap">
+    <h2>A primeira vez</h2>
+    <p class="lead">Você fala devagar, erra um artigo, e a pessoa do outro lado entende e responde, o que é pouco, mas é também a primeira vez.</p>
+    <p class="acao"><a class="cta" href="https://pay.hub.la/HZlYwArjvC44brPmHeFR" data-checkout>Quero o ebook</a></p>
+    <p class="micro preco">R$ <span data-price>27</span>, com 30 dias de garantia.</p>
+  </div>
+</section>
+
+<footer>
+  <p class="marca">Leffo</p>
+  <p>Contato: direct do Instagram <a href="https://www.instagram.com/leffo__/">@leffo__</a></p>
+  <p><a href="../privacidade.html">Política de privacidade</a></p>
+  <p>© 2026 Leffo</p>
+</footer>
+
+<script>
+  // Teste A/B de preço. A planilha do teste (scripts/teste-ab.gs) escolhe a variante de cada visitante,
+  // mandando mais gente para a que mais deixa dinheiro líquido por visita. A escolha fica guardada no navegador por 7 dias.
+  // ?v=a, ?v=b, ?v=c ou ?v=d na URL força uma variante (útil para conferir), sem contar visita.
+  const API = "https://script.google.com/macros/s/AKfycbx2G3tHUocXmXvrZjAp_S-ZDlyVwU1V7LK4usUtiq-VLVukLjqJlQ99IrurMbsibAmo/exec";
+  const PADRAO = { id: "b", preco: 27, checkout: "https://pay.hub.la/HZlYwArjvC44brPmHeFR" };
+  const CHAVE = "leffo_italiano_variante";
+  const SEMANA = 7 * 24 * 3600 * 1000;
+  const PARAMS = new URLSearchParams(location.search);
+
+  function lerSalva() {
+    try {
+      const s = JSON.parse(localStorage.getItem(CHAVE) || "null");
+      return s && s.v && valida(s.v) && Date.now() - s.em < SEMANA ? s.v : null;
+    } catch (e) { return null; }
+  }
+  function guardar(v) {
+    try { localStorage.setItem(CHAVE, JSON.stringify({ v, em: Date.now() })); } catch (e) {}
+  }
+  function valida(v) {
+    return !!v && typeof v.checkout === "string" && v.checkout.startsWith("https://pay.hub.la/") && Number(v.preco) > 0;
+  }
+
+  // Os utm_* da visita seguem para o checkout, para as vendas aparecerem separadas na Hubla.
+  function comUtm(checkout) {
+    let u;
+    try { u = new URL(checkout); } catch (e) { return checkout; }
+    PARAMS.forEach((valor, nome) => { if (nome.startsWith("utm_")) u.searchParams.set(nome, valor); });
+    return u.toString();
+  }
+
+  function aplicar(v) {
+    document.querySelectorAll("[data-price]").forEach(el => el.textContent = v.preco);
+    document.querySelectorAll("[data-checkout]").forEach(a => a.href = comUtm(v.checkout));
+    document.documentElement.classList.remove("aguardando");
+  }
+
+  async function escolher() {
+    const forcada = PARAMS.get("v");
+    const salva = lerSalva();
+    if (!forcada && salva) return salva;
+    if (!API.startsWith("https://")) return PADRAO;
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 8000);
+    const r = await fetch(API + "?acao=escolher" + (forcada ? "&v=" + encodeURIComponent(forcada) : ""), { signal: ctrl.signal });
+    const v = await r.json();
+    if (!valida(v)) return PADRAO;
+    if (!forcada) guardar(v);
+    return v;
+  }
+
+  escolher().then(aplicar).catch(() => aplicar(PADRAO));
+</script>
+</body>
+</html>
