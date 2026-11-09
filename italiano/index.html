@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Italiano Sozinho em 30 Dias · Leffo</title>
-<meta name="description" content="Ebook com 30 dias de italiano, cerca de 20 minutos por dia, para sustentar uma conversa curta e simples, estudando sozinho.">
+<meta name="description" content="Em 30 dias, com 20 minutos por dia, a sua primeira conversa de verdade em italiano, estudando sozinho.">
 <meta property="og:title" content="Italiano Sozinho em 30 Dias">
 <meta property="og:description" content="Sua primeira conversa em italiano, em 20 minutos por dia.">
 <meta property="og:image" content="https://lf.korium.co/italiano/img/og.jpg">
@@ -209,6 +209,57 @@ details.q p { margin-top: 8px; font-size: 18px; line-height: 1.38; }
 footer { padding: 28px 20px 40px; text-align: center; font-size: 16px; line-height: 1.7; background: var(--verde); color: var(--creme-claro); }
 footer .marca { font-family: "Gloock", Georgia, serif; font-size: 23px; color: var(--creme); }
 
+/* versão de vendas */
+h1 { font-size: clamp(35px, 9.8vw, 58px); line-height: 1.07; }
+.hero .marca { font-size: 19px; }
+.hero .cond { margin-top: 14px; font-size: 20px; line-height: 1.32; }
+.hero .cta { min-width: 280px; }
+.crencas { display: grid; gap: 12px; margin-top: 24px; }
+.crencas > div { padding: 20px; background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); box-shadow: var(--sombra); }
+.crencas h3 { font-size: 25px; margin-bottom: 6px; }
+.crencas p { font-size: 18px; line-height: 1.36; }
+@media (min-width: 720px) { .crencas { grid-template-columns: repeat(3, 1fr); } .crencas-wrap { max-width: 1020px; } }
+.faixa-foto { width: 100%; height: clamp(200px, 38vw, 400px); object-fit: cover; object-position: 50% 45%; }
+.desejo .lead { font-size: 22px; line-height: 1.4; }
+.virada { padding: 48px 0; }
+.frase-grande { font-family: "Gloock", Georgia, serif; font-size: clamp(27px, 7vw, 40px); line-height: 1.18; color: var(--verde); text-align: center; }
+.sub-h { margin: 30px 0 14px; font-size: 25px; }
+.passos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.passos > div { padding: 16px; border: 1px solid rgba(251, 231, 161, .32); border-radius: var(--raio); }
+.passos b { font-family: "Gloock", Georgia, serif; font-weight: 400; font-size: 26px; color: var(--creme); }
+.passos h3 { font-size: 21px; margin: 2px 0 4px; }
+.passos p { font-size: 17px; line-height: 1.3; }
+.linha li { grid-template-columns: 98px 1fr; }
+.linha b { white-space: nowrap; }
+.ganhos { display: grid; gap: 14px; margin-top: 24px; }
+.ganhos > div { padding: 18px 20px; background: var(--verde); color: var(--papel); border-radius: var(--raio); }
+.ganhos h3 { color: var(--creme); margin-bottom: 6px; }
+.ganhos p { font-size: 18px; line-height: 1.36; }
+@media (min-width: 720px) { .ganhos { grid-template-columns: 1fr 1fr; } }
+.autor p { font-size: 20px; }
+.autor h2 { margin-bottom: 12px; }
+#oferta h2.centro { color: var(--creme); margin-bottom: 22px; }
+.caixa h3 { color: var(--verde); font-size: clamp(27px, 7vw, 36px); line-height: 1.08; margin-bottom: 4px; }
+.pilha { display: grid; gap: 0; }
+.pilha > div { display: grid; grid-template-columns: 58px 1fr; column-gap: 12px; padding: 13px 0; border-top: 1px solid var(--linha); }
+.pilha b { grid-row: span 2; font-family: "Gloock", Georgia, serif; font-weight: 400; font-size: 32px; line-height: 1; color: var(--verde); }
+.pilha dt, .pilha dd { grid-column: 2; }
+.pilha dt { font-family: "Gloock", Georgia, serif; font-size: 22px; color: var(--verde); line-height: 1.18; }
+.pilha dd { font-size: 18px; line-height: 1.34; }
+.compara { margin-top: 14px; padding: 14px 16px; background: var(--creme-claro); border-radius: 8px; font-size: 18px; line-height: 1.36; }
+.compara .preco { font-weight: 700; }
+.garantia { grid-template-columns: 90px 1fr; padding: 24px; border: 2px solid var(--creme); }
+.selo { width: 90px; height: 90px; }
+.selo b { font-size: 38px; }
+.garantia h3 { font-size: 28px; line-height: 1.1; }
+.garantia .letras { margin-top: 10px; font-size: 15.5px; opacity: .85; }
+.fim h2 { text-align: center; }
+.fim { padding-top: 48px; text-align: left; }
+.fim .lead { max-width: none; }
+.fim .acao, .fim .micro { text-align: center; }
+.ps { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--linha); font-size: 18px; line-height: 1.38; }
+.ps b { font-family: "Gloock", Georgia, serif; font-weight: 400; color: var(--verde); }
+
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } .cta:hover { transform: none; } }
 </style>
 </head>
@@ -217,119 +268,114 @@ footer .marca { font-family: "Gloock", Georgia, serif; font-size: 23px; color: v
 <header class="hero verde">
   <div class="hero-grade">
     <div class="hero-texto">
-      <p class="marca">Leffo</p>
-      <h1>Italiano Sozinho <span class="junto">em 30 Dias</span></h1>
-      <p class="sub">Sua primeira conversa em italiano, em 20 minutos por dia</p>
-      <p class="cond">Se você fizer os 30 dias falando em voz alta, vai conseguir sustentar uma conversa curta e simples, de 2 a 3 minutos, com pausas e com erros, mas com uma pessoa de verdade.</p>
-      <a class="cta claro" href="#oferta">Quero o ebook</a>
-      <p class="micro">Ebook em PDF, com 30 dias de garantia.</p>
+      <p class="marca">Italiano Sozinho em 30 Dias</p>
+      <h1>O italiano que você sempre adiou vira a sua primeira conversa de verdade em 30 dias</h1>
+      <p class="cond">Vinte minutos por dia, sozinho, no celular, mesmo que você nunca tenha estudado uma palavra de italiano.</p>
+      <a class="cta claro" href="#oferta">Quero começar hoje</a>
+      <p class="micro">Ebook em PDF com garantia de 30 dias</p>
     </div>
     <div class="hero-foto"><img class="capa" src="img/capa.webp" width="720" height="1018" alt="Capa do ebook Italiano Sozinho em 30 Dias"></div>
   </div>
 </header>
 
-<section class="cena">
+<section>
   <div class="wrap">
-    <h2>Aí alguém pergunta <i lang="it">di dove sei?</i></h2>
-    <p class="lead">A sua cabeça fica em branco, você sorri e torce para a pessoa mudar de assunto.</p>
-    <p>Você já baixou o aplicativo, salvou o vídeo, comprou caderno novo, fez três horas num sábado e passou duas semanas sem abrir nada, e antes de concluir que não leva jeito vale olhar o que você andou treinando, porque quem larga costuma reconhecer pelo menos uma destas três cenas.</p>
-    <div class="tres">
-      <div><h3>A regra antes da frase</h3><p>Você decora o verbo <i lang="it">essere</i> e faz os exercícios, mas continua sem conseguir dizer bom dia sem pensar, porque a regra explica uma frase que você ainda não tem.</p></div>
-      <div><h3>Sessões longas e raras</h3><p>Três horas no sábado parecem coisa séria, só que a semana passa, a matéria acumula e a vontade some, enquanto vinte minutos quase sempre cabem no dia.</p></div>
-      <div><h3>Palavras soltas</h3><p><i lang="it">Casa, cane, gatto, libro</i>: a lista dá sensação de progresso, mas numa conversa o que você usa são frases.</p></div>
+    <h2>Você não desistiu do italiano, você desistiu de se sentir burro</h2>
+    <p class="lead">Você começou empolgado numa segunda-feira, abriu o caderno, conjugou o verbo <i lang="it">essere</i>, decorou os artigos e a lista das cores, e na quarta alguém disse uma frase inteira na sua frente e a única palavra que você pegou foi <i lang="it">ciao</i>.</p>
+    <p>Depois vieram o aplicativo baixado, o vídeo salvo, as três horas num sábado e as duas semanas sem abrir nada, até sobrar uma destas três frases, que quase todo mundo repete para si mesmo e que merecem ser olhadas de perto antes de você acreditar nelas.</p>
+    <div class="crencas">
+      <div><h3>“Já passei da idade.”</h3><p>Criança não tem talento para língua, criança tem todo dia, e todo dia você também pode ter, em vinte minutos que cabem até nos dias ruins.</p></div>
+      <div><h3>“Eu não levo jeito.”</h3><p>Ninguém aprendeu português decorando tabela, e a sua mãe não mandou você conjugar o verbo ser antes de pedir água, porque uma língua começa pela frase que resolve a vida.</p></div>
+      <div><h3>“Eu já tentei e larguei.”</h3><p>Quem larga quase sempre começou pela regra, estudou em sessões longas e raras e acumulou palavras soltas, e este plano foi desenhado para fazer exatamente o contrário dessas três coisas.</p></div>
     </div>
-    <p>Ninguém aprendeu português por tabela, porque a gente começa pela frase que resolve a vida, e é por aí que este ebook começa.</p>
   </div>
 </section>
 
-<section class="tinta">
-  <div class="wrap largo">
-    <h2>O que você vai encontrar lá dentro</h2>
-    <ul class="bullets">
-      <li>Você aprende o que dizer no segundo em que não entendeu nada, sem voltar para o português <span class="dia">(dia 6)</span></li>
-      <li>Você descobre por que não deve pedir com <i lang="it">voglio</i> numa loja italiana e qual é a palavra que resolve todos os pedidos <span class="dia">(dia 15)</span></li>
-      <li><i lang="it">Anch’io</i> parece servir para todo “eu também”, mas há um caso em que a resposta é outra, e é justamente quando vocês falam do que gostam <span class="dia">(dia 26)</span></li>
-      <li><i lang="it">Ciao</i> pode soar íntimo demais com um desconhecido, e você aprende o que dizer no lugar <span class="dia">(dia 1)</span></li>
-      <li>Você aprende a falar do futuro sem precisar aprender o tempo futuro <span class="dia">(dia 24)</span></li>
-      <li>As 4 armadilhas de pronúncia de quem fala português do Brasil aparecem explicadas, com o som certo no lugar de cada uma</li>
-      <li>Você descobre as palavras que compram tempo quando trava, em vez de um silêncio longo <span class="dia">(dia 25)</span></li>
-      <li>Você entende por que em italiano é a pizza que agrada você, e isso resolve <i lang="it">mi piace</i> e <i lang="it">mi piacciono</i> de uma vez <span class="dia">(dia 12)</span></li>
-      <li>Você treina três despedidas, porque saber encerrar uma conversa é o que tira o medo de começar <span class="dia">(dia 27)</span></li>
-      <li>Você faz uma gravação no dia 7 e a ouve de novo no dia 28, para comparar com a sua própria voz</li>
-      <li>Você encontra onde achar uma pessoa de verdade para a conversa e recebe a mensagem pronta em italiano para convidar <span class="dia">(dias 29 e 30)</span></li>
-      <li class="mais">E mais: a conversa inteira do dia 30 vem escrita logo no começo, para você saber desde o primeiro dia aonde está indo</li>
-    </ul>
-    <h3 class="parte2">E na segunda parte, para depois do dia 30</h3>
-    <ul class="bullets">
-      <li>Você tem frases para doze situações do dia a dia, do mercado à farmácia, do hotel à igreja e ao telefone</li>
-      <li>Um vocabulário organizado por tema deixa você trocar palavras nas frases que já sabe</li>
-      <li>Um guia dos verbos mais usados no presente explica os três modelos regulares e onze irregulares, sempre em comparação com o português</li>
-      <li>Seis histórias a mais de Ida Baccini, adaptadas para iniciante, completam as dez do livro</li>
-      <li>Uma sugestão de plano para o segundo mês segue em ritmo mais leve, usando só o que está no livro e sem prometer nível nem resultado</li>
-    </ul>
-    <p class="acao"><a class="cta" href="#oferta">Quero o ebook</a></p>
+<img class="faixa-foto" src="img/cafe-1-900.webp" srcset="img/cafe-1-900.webp 900w, img/cafe-1-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="Balcão de um bar italiano com máquina de espresso e xícaras empilhadas">
+<section class="verde desejo">
+  <div class="wrap">
+    <h2>Você nunca quis estudar italiano, você quis viver o que ele abre</h2>
+    <p class="lead">Você quer pedir o café no balcão em Roma sem apontar para a vitrine, responder quando a senhora ao seu lado na estação puxa conversa, abrir um livro italiano e ver as palavras fazerem sentido, e quem sabe, finalmente, cumprir aquela vontade antiga que vem do sobrenome da família, da viagem que você ainda vai fazer ou da música que você canta sem saber o que está dizendo.</p>
+    <p>Tudo isso começa no mesmo lugar, que é o momento em que uma pessoa olha para você, pergunta <i lang="it">di dove sei?</i> e a sua boca responde.</p>
+  </div>
+</section>
+
+<section class="virada tinta">
+  <div class="wrap">
+    <p class="frase-grande">Existe uma distância enorme entre quem diz que um dia vai aprender italiano e quem conversou em italiano na semana passada, e essa distância cabe em 30 dias.</p>
   </div>
 </section>
 
 <section class="verde">
   <div class="wrap">
-    <h2>Trinta pedaços pequenos, uma conversa só</h2>
-    <p>O ebook mostra logo no começo a conversa do dia 30 e cada dia leva até ela, ocupando uma ou duas páginas e trazendo uma pequena vitória, algo que você já consegue fazer naquele mesmo dia.</p>
+    <h2>O plano começa pelo ponto de chegada</h2>
+    <p>Logo no começo do ebook você lê, inteira, a conversa que vai ter no dia 30, e tudo o que vem depois existe para levar você até ela, frase por frase, com uma página por dia, uma conquista que você já leva naquele mesmo dia, um Desafio para fazer de boca e um gancho que deixa o dia seguinte esperando por você.</p>
     <div class="numeros">
       <div><b>30</b><span>dias</span></div>
       <div><b>20</b><span>minutos por dia</span></div>
       <div><b>10</b><span>horas no total</span></div>
     </div>
+    <h3 class="sub-h">Como são os seus 20 minutos</h3>
+    <div class="passos">
+      <div><b>3 min</b><h3>Lembrar</h3><p>Sem olhar, você tenta dizer as frases do dia anterior, porque forçar a memória treina mais do que reler.</p></div>
+      <div><b>6 min</b><h3>Frases</h3><p>Você lê cada frase em voz alta e depois cobre o italiano para dizer a partir do português.</p></div>
+      <div><b>6 min</b><h3>Diálogo</h3><p>Você faz as duas vozes e responde de cabeça, trocando nomes e cidades pelos seus.</p></div>
+      <div><b>5 min</b><h3>Tarefa</h3><p>Você cumpre de boca a tarefa e o Desafio do dia, que é o momento em que o estudo vira fala.</p></div>
+    </div>
+    <h3 class="sub-h">O seu mês, semana por semana</h3>
     <div class="grade" aria-hidden="true"><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i class="m"></i><i class="f"></i></div>
     <ul class="linha">
-      <li><b>Dia 1</b><span>Você cumprimenta e diz o seu nome, em cerca de 20 minutos que dá para fazer hoje à noite.</span></li>
-      <li><b>Dia 7</b><span>Você se apresenta em um minuto, sem olhar, e grava.</span></li>
-      <li><b>Dia 14</b><span>Você fala da sua vida por cerca de um minuto, sem olhar.</span></li>
-      <li><b>Dia 21</b><span>Você grava três cenas sem olhar: um café, uma estação e uma loja.</span></li>
-      <li><b>Dia 28</b><span>Você grava de novo e compara com a gravação do dia 7.</span></li>
-      <li><b>Dia 29</b><span>Você ensaia a conversa e manda a mensagem para combinar.</span></li>
-      <li><b>Dia 30</b><span>Você tem a sua primeira conversa em italiano.</span></li>
+      <li><b>Semana 1</b><span>Você aprende a dizer quem é e, no dia 7, se apresenta em um minuto, sem olhar, e grava a sua voz.</span></li>
+      <li><b>Semana 2</b><span>A conversa ganha assunto, com idade, família, horários, gostos e fim de semana, e no dia 14 você fala da sua vida por cerca de um minuto.</span></li>
+      <li><b>Semana 3</b><span>Você sai de casa para pedir no café e no restaurante, perguntar o caminho, comprar passagem e fazer compras, e no dia 21 grava três cenas sem olhar.</span></li>
+      <li><b>Semana 4</b><span>Você aprende a perguntar de volta, contar o que fez, ganhar tempo quando trava e se despedir, e no dia 28 compara a sua voz com a do dia 7.</span></li>
+      <li><b>Dia 30</b><span>Você tem a sua primeira conversa em italiano, com uma pessoa de verdade.</span></li>
     </ul>
-    <p class="sem">Aqui não tem aula para assistir, nem lista de verbos para decorar antes de falar, nem mensalidade, e você só precisa de um celular e de um pedaço de papel. <strong>A única coisa que não sai da sua conta é falar sozinho em voz alta, todo dia.</strong></p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>O que você consegue, e o que não</h2>
-    <p class="lead">A promessa é uma conversa curta e simples, de 2 a 3 minutos, e o critério é conseguir ir e voltar nela, sem a preocupação de falar bonito.</p>
-    <div class="contas">
-      <div class="sim">
-        <h3>Nessa conversa, você</h3>
-        <ul>
-          <li>cumprimenta e se apresenta</li>
-          <li>diz de onde é e o que faz</li>
-          <li>faz e responde perguntas básicas do dia a dia</li>
-          <li>pede um café ou o caminho até um lugar</li>
-          <li>pede que a pessoa repita ou fale mais devagar</li>
-        </ul>
-      </div>
-      <div class="nao">
-        <h3>O que o ebook não faz</h3>
-        <ul>
-          <li><strong>Não tem áudio</strong> e não escreve a pronúncia de cada frase</li>
-          <li>Não faz você entender um filme ou italianos falando rápido</li>
-          <li>Não ensina a gramática toda, só o que cada dia pede</li>
-          <li>Não prepara para certificado nem prova</li>
-          <li>Não marca a conversa por você: indica onde achar alguém, e quem combina é você</li>
-        </ul>
-      </div>
+    <h2>O que você leva no dia 30</h2>
+    <p class="lead">Você fala devagar, erra um artigo, e a pessoa do outro lado entende e responde, o que parece pouco até o instante em que acontece com você pela primeira vez.</p>
+    <div class="ganhos">
+      <div><h3>A sua primeira conversa real</h3><p>São dois ou três minutos com uma pessoa de verdade, em que você se apresenta, diz de onde é e o que faz, pergunta de volta e segue em frente.</p></div>
+      <div><h3>Frases que saem antes de você pensar</h3><p>Com a repetição, as frases que você disse todos os dias começam a sair sozinhas, e você passa a saber o que dizer até quando não entendeu.</p></div>
+      <div><h3>Vocabulário que serve para alguma coisa</h3><p>Você guarda tudo em frase inteira, para se apresentar, falar da família, pedir no café, perguntar o caminho e fazer compras.</p></div>
+      <div><h3>Uma rotina que você finalmente manteve</h3><p>Você termina com o Painel dos 30 Dias marcado, quatro Painéis de Conquistas preenchidos e a própria voz gravada, para ouvir o quanto mudou.</p></div>
     </div>
-    <p class="filtro">Se você não topa falar sozinho em voz alta, a conversa do dia 30 não vai acontecer, e é melhor não comprar.</p>
   </div>
 </section>
 
 <section class="tinta">
+  <div class="wrap largo">
+    <h2>O que você vai descobrir lá dentro</h2>
+    <ul class="bullets">
+      <li>A frase que salva o segundo em que você não entendeu nada, sem voltar para o português <span class="dia">(dia 6)</span></li>
+      <li>A palavra que parece natural e soa ríspida no balcão de um café italiano, e a que resolve todos os pedidos <span class="dia">(dia 15)</span></li>
+      <li>O caso em que responder <i lang="it">anch’io</i> é errado, e é justamente quando vocês falam do que gostam <span class="dia">(dia 26)</span></li>
+      <li>Por que <i lang="it">ciao</i> pode soar íntimo demais com um desconhecido, e o que dizer no lugar <span class="dia">(dia 1)</span></li>
+      <li>A letra que separa o amigo do desconhecido, e como fazer a troca na hora <span class="dia">(dia 3)</span></li>
+      <li>Como falar do futuro sem aprender o tempo futuro <span class="dia">(dia 24)</span></li>
+      <li>As 4 armadilhas de pronúncia em que quem fala português do Brasil costuma cair, e o som certo no lugar de cada uma</li>
+      <li>As palavrinhas que compram tempo quando você trava e evitam o silêncio longo <span class="dia">(dia 25)</span></li>
+      <li>Por que em italiano é a pizza que agrada você, e como isso resolve <i lang="it">mi piace</i> e <i lang="it">mi piacciono</i> de uma vez <span class="dia">(dia 12)</span></li>
+      <li>Por que “comi” se diz com <i lang="it">ho</i>, e como usar isso para contar o que você fez ontem <span class="dia">(dia 23)</span></li>
+      <li>Por que saber encerrar uma conversa é o que tira o medo de começar, e três despedidas para usar <span class="dia">(dia 27)</span></li>
+      <li>A gravação do dia 7 que você só volta a ouvir no dia 28, para escutar com o próprio ouvido o que mudou</li>
+      <li>A mensagem pronta, em italiano, que marca a sua primeira conversa, e os lugares onde achar uma pessoa de verdade para tê-la <span class="dia">(dias 29 e 30)</span></li>
+      <li class="mais">E a conversa inteira do dia 30, escrita logo no começo, para você ver desde o primeiro dia aonde está indo</li>
+    </ul>
+    <p class="acao"><a class="cta" href="#oferta">Quero começar hoje</a></p>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
-    <h2>Antes de pagar, leia</h2>
-    <p>Ainda não tenho depoimentos para mostrar, porque este é o primeiro produto da Leffo, e o que posso mostrar é o próprio ebook.</p>
-    <div class="paginas"><img src="img/pag-chegada.webp" width="520" height="735" loading="lazy" alt="Página do ebook com a conversa do dia 30"><img src="img/pag-dia6.webp" width="520" height="735" loading="lazy" alt="Página do dia 6 do ebook"><img src="img/pag-leitura.webp" width="520" height="735" loading="lazy" alt="Página do ebook sobre como o italiano se lê"></div>
-    <!-- Trechos reais do ebook, gerados de leffo/produtos/italiano-30-dias/src/ (semana1.txt, dia 6; 00-abertura.html, O ponto de chegada). -->
+    <h2>Não precisa acreditar em mim, abra o ebook antes de pagar</h2>
+    <p>O que você vê abaixo são páginas e trechos reais, e o melhor teste é ler o dia 6 em voz alta agora, porque ele leva poucos minutos e já ensina as frases que mais fazem falta a quem trava.</p>
+    <div class="paginas"><img src="img/pag-chegada.webp" width="520" height="735" loading="lazy" alt="Página do ebook com a conversa do dia 30"><img src="img/pag-dia6.webp" width="520" height="735" loading="lazy" alt="Página do dia 6 do ebook"><img src="img/pag-leitura.webp" width="520" height="735" loading="lazy" alt="Página do ebook sobre como o italiano se lê"><img src="img/pag-historia.webp" width="520" height="735" loading="lazy" alt="Página de uma história do ebook"><img src="img/pag-frases.webp" width="520" height="735" loading="lazy" alt="Página do Banco de Frases do ebook"><img src="img/pag-verbos.webp" width="520" height="735" loading="lazy" alt="Página do Guia de Verbos do ebook"></div>
+    <!-- Trechos reais do ebook, gerados de leffu2/produtos/italiano-30-dias/src/ (semana1.txt, dia 6; 00-abertura.html, O ponto de chegada). -->
     <article class="folha">
       <p class="dia-num">Dia 6</p>
       <h3 lang="it">Non ho capito</h3>
@@ -345,6 +391,8 @@ footer .marca { font-family: "Gloock", Georgia, serif; font-size: 23px; color: v
       </details>
       <h4>Fale em voz alta</h4>
       <p>Estas frases seguram qualquer conversa, então vale gastar os 5 minutos inteiros nelas, dizendo cada uma até conseguir falar sem olhar, porque mesmo que você só soubesse isto no dia 30 ainda conseguiria pedir ajuda.</p>
+      <h4>Desafio do dia</h4>
+      <p>Repita as seis frases do dia até dizê-las sem olhar, e a meta é conseguir na segunda tentativa.</p>
     </article>
     <details class="chegada">
       <summary>Ler a conversa do dia 30 inteira</summary>
@@ -353,67 +401,72 @@ footer .marca { font-family: "Gloock", Georgia, serif; font-size: 23px; color: v
   </div>
 </section>
 
-<section class="autor">
+<section class="autor tinta">
   <div class="wrap">
     <h2>Quem escreveu</h2>
-    <p>Eu já estive onde você está, porque aprendi italiano sozinho e hoje estudo francês, de modo que conheço de perto a parte de abrir a boca sem saber direito o que vai sair.</p>
-    <p>Não sou professor nem nativo, e escrevi este ebook do mesmo lado da mesa que você, que é o lado em que eu fico, para irmos juntos, um dia de cada vez.</p>
+    <p>Eu já passei por isso que você está passando, porque os idiomas que eu sei aprendi por conta própria, e hoje falo português, inglês e italiano, cada um em um nível diferente, enquanto sigo aprendendo francês.</p>
+    <p>Foi por essa razão que organizei estas páginas do jeito que eu gostaria de ter encontrado, para você não precisar descobrir sozinho por onde começar, o que deixar para depois e o que treinar em voz alta, e nos próximos 30 dias a gente vai junto, um dia de cada vez.</p>
     <p class="assina">Leffo</p>
-  </div>
-</section>
-
-<section class="verde" id="oferta">
-  <div class="wrap">
-    <div class="caixa">
-      <div class="oferta-topo">
-        <img src="img/capa.webp" width="720" height="1018" loading="lazy" alt="Capa do ebook">
-        <div><h2>Italiano Sozinho em 30 Dias</h2><p class="subtitulo">Sua primeira conversa em italiano, em 20 minutos por dia</p></div>
-      </div>
-      <ul>
-        <li>Os 30 dias em PDF, no celular, no tablet ou no computador</li>
-        <li>A conversa do dia 30, escrita logo no começo</li>
-        <li>Dez histórias italianas de 1882, de Ida Baccini, adaptadas para iniciante, para ler e responder de cabeça</li>
-        <li>Uma parte sobre métodos de aprender idioma, com as cinco ideias do caminho</li>
-        <li>Como o italiano se lê, com as armadilhas de quem fala português</li>
-        <li>Onde achar com quem conversar, com a mensagem pronta para combinar</li>
-        <li>Checklist dos 30 dias</li>
-        <li>A segunda parte, com frases para doze situações, vocabulário por tema, guia de verbos e plano para o segundo mês</li>
-      </ul>
-      <div class="valor preco">
-        <b><small>R$</small><span data-price>27</span></b>
-        <p>pagamento único, no Pix ou no cartão</p>
-      </div>
-      <a class="cta" href="https://pay.hub.la/HZlYwArjvC44brPmHeFR" data-checkout>Quero o ebook</a>
-      <p class="nota">Você é levado ao checkout da Hubla e recebe o acesso por e-mail.</p>
-    </div>
-    <div class="garantia">
-      <div class="selo"><b>30</b><span>DIAS</span></div>
-      <div>
-        <h3>30 dias de garantia</h3>
-        <p>O prazo cobre o plano inteiro, de modo que dá para chegar ao dia 30 antes de decidir, e se achar que não valeu, basta pedir o reembolso pela plataforma nos primeiros 7 dias, ou pelo e-mail que está na área de membros até 30 dias depois da compra, para receber o valor integral sem precisar explicar o motivo.</p>
-      </div>
-    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Perguntas</h2>
-    <details class="q"><summary>Sem áudio, como eu vou falar?</summary><p>Lendo em voz alta e repetindo, porque o ebook não tem áudio, o italiano se lê quase sempre como se escreve e uma parte do livro mostra as combinações que mudam de som, enquanto o som de verdade você encontra na conversa, e por isso, se você precisa ouvir cada frase antes de falar, este não é o material certo.</p></details>
-    <details class="q"><summary>Serve para quem nunca estudou italiano?</summary><p>Foi feito para isso, ou para quem tentou e parou no começo, e se você já se vira em italiano ele não é para você.</p></details>
-    <details class="q"><summary>E se eu perder um dia?</summary><p>Continue de onde parou, sem dobrar o dia seguinte, porque não há nada de errado em chegar ao dia 30 depois de 35 ou 40 dias corridos.</p></details>
-    <details class="q"><summary>Por que comprar de quem não é professor?</summary><p>Você não está comprando uma aula, e sim a ordem em que eu colocaria as coisas para quem começa do nada, escrita por quem também aprendeu sozinho, e a melhor forma de julgar é ler a conversa do dia 30 e ver se é isso que você quer.</p></details>
+    <h2>O que costuma passar pela cabeça</h2>
+    <details class="q" open><summary>E se eu nunca tiver estudado italiano?</summary><p>O plano foi feito exatamente para quem começa do nada, ou para quem tentou e parou no começo, e no dia 1 você já cumprimenta e diz o seu nome.</p></details>
+    <details class="q"><summary>Eu não tenho tempo.</summary><p>São cerca de vinte minutos por dia, ou dez horas no mês inteiro, mais ou menos o que muita gente gasta numa temporada de série, e você só precisa de um celular e de um pedaço de papel, de modo que dá para fazer antes do trabalho ou antes de dormir.</p></details>
+    <details class="q"><summary>Como eu aprendo a falar sem áudio?</summary><p>Lendo em voz alta desde o primeiro dia, porque o italiano se lê quase sempre como se escreve, e uma parte do ebook mostra as combinações que mudam de som e as armadilhas de quem fala português, enquanto o som de verdade você confirma na conversa.</p></details>
+    <details class="q"><summary>E sem professor, quem me guia?</summary><p>O próprio plano, que diz o que fazer em cada dia, traz a explicação depois da frase e em poucas linhas, e coloca uma pessoa de verdade do outro lado da conversa no dia 30.</p></details>
+    <details class="q"><summary>Com quem eu vou conversar no dia 30?</summary><p>O ebook indica onde encontrar italianos dispostos a conversar, e traz a mensagem pronta, em italiano, para você combinar a conversa.</p></details>
+    <details class="q"><summary>E se eu perder um dia?</summary><p>Você continua de onde parou, sem dobrar o dia seguinte, porque não há nada de errado em chegar ao dia 30 depois de 35 ou 40 dias corridos.</p></details>
     <details class="q"><summary>Como eu recebo?</summary><p>Depois que o pagamento é confirmado, você recebe por e-mail o acesso ao PDF, e se ele não chegar, olhe o spam e me chame no direct do Instagram <a href="https://www.instagram.com/leffu2/">@leffu2</a>.</p></details>
   </div>
 </section>
 
-<img class="fim-foto" src="img/cafe-1-900.webp" srcset="img/cafe-1-900.webp 900w, img/cafe-1-1600.webp 1600w" sizes="100vw" width="1600" height="1067" loading="lazy" alt="Balcão de um bar com máquina de espresso e xícaras empilhadas">
+<section class="verde" id="oferta">
+  <div class="wrap">
+    <h2 class="centro">Tudo o que você recebe hoje</h2>
+    <div class="caixa">
+      <div class="oferta-topo">
+        <img src="img/capa.webp" width="720" height="1018" loading="lazy" alt="Capa do ebook">
+        <div><h3>Italiano Sozinho em 30 Dias</h3><p class="subtitulo">Sua primeira conversa em italiano, em 20 minutos por dia</p></div>
+      </div>
+      <dl class="pilha">
+        <div><b>30</b><dt>Caminho de 30 Dias</dt><dd>Uma página por dia, com a conquista, o desafio e o gancho para o dia seguinte, somando 143 frases novas e a sua primeira conversa no final.</dd></div>
+        <div><b>4</b><dt>Painéis de Conquistas</dt><dd>Um por semana, para marcar o que você já consegue fazer e ver, no papel, a diferença entre o dia 1 e agora.</dd></div>
+        <div><b>157</b><dt>Banco de Frases</dt><dd>Frases prontas para doze situações reais, do mercado e da farmácia ao hotel, à igreja e ao telefone.</dd></div>
+        <div><b>238</b><dt>Vocabulário por Tema</dt><dd>Palavras em onze temas, para você trocar nas frases que já sabe e falar de muito mais coisas.</dd></div>
+        <div><b>15</b><dt>Guia de Verbos</dt><dd>Os verbos que mais aparecem no presente, com os modelos regulares e as comparações com o português.</dd></div>
+        <div><b>10</b><dt>Biblioteca de Histórias</dt><dd>Dez histórias italianas de 1882, de Ida Baccini, adaptadas para quem está começando, para ler e responder de cabeça.</dd></div>
+        <div><b>2</b><dt>Plano do Mês 2 e Mensagem Pronta</dt><dd>O plano para o segundo mês, em ritmo mais leve, e a mensagem em italiano que marca a sua conversa com uma pessoa de verdade.</dd></div>
+      </dl>
+      <p class="compara">Para ter uma comparação real, uma aula com tutor de italiano custava cerca de R$ 80 por hora quando consultei o italki (US$ 15), o que levaria as 10 horas deste plano a cerca de R$ 800, enquanto aqui você paga <span class="preco">R$ <span data-price>27</span></span> uma única vez e o material fica com você.</p>
+      <div class="valor preco">
+        <b><small>R$</small><span data-price>27</span></b>
+        <p>pagamento único, no Pix ou no cartão</p>
+      </div>
+      <a class="cta" href="https://pay.hub.la/HZlYwArjvC44brPmHeFR" data-checkout>Quero começar hoje</a>
+      <p class="nota">Ebook em PDF, sem áudio, para ler no celular, no tablet ou no computador. Você recebe o acesso por e-mail assim que o pagamento é confirmado.</p>
+    </div>
+    <div class="garantia">
+      <div class="selo"><b>30</b><span>DIAS</span></div>
+      <div>
+        <h3>Faça os 30 dias inteiros por minha conta</h3>
+        <p>Você compra hoje, segue o plano até a conversa do dia 30 e, se achar que não valeu, recebe o valor integral de volta, sem precisar explicar o motivo, porque o risco desta decisão fica todo comigo.</p>
+        <p class="letras">Peça o reembolso pela plataforma nos primeiros 7 dias, ou pelo e-mail que está na área de membros até 30 dias depois da compra.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="fim">
   <div class="wrap">
-    <h2>A primeira vez</h2>
-    <p class="lead">Você fala devagar, erra um artigo, e a pessoa do outro lado entende e responde, o que é pouco, mas é também a primeira vez.</p>
-    <p class="acao"><a class="cta" href="https://pay.hub.la/HZlYwArjvC44brPmHeFR" data-checkout>Quero o ebook</a></p>
-    <p class="micro preco">R$ <span data-price>27</span>, com 30 dias de garantia.</p>
+    <h2>Você pode fazer o dia 1 hoje à noite</h2>
+    <p class="lead">São cerca de vinte minutos, e no fim deles você já cumprimenta e diz o seu nome em italiano, de modo que amanhã, em vez de mais um dia querendo aprender, você já vai ser alguém que começou.</p>
+    <p>Os próximos 30 dias vão passar de qualquer jeito, e a única diferença é se no fim deles você ainda vai estar dizendo que um dia aprende, ou se vai ter conversado em italiano.</p>
+    <p class="acao"><a class="cta" href="https://pay.hub.la/HZlYwArjvC44brPmHeFR" data-checkout>Quero começar hoje</a></p>
+    <p class="micro preco">R$ <span data-price>27</span>, com 30 dias de garantia</p>
+    <p class="ps"><b>P.S.</b> Se ainda restar alguma dúvida, leia a conversa do dia 30 ali em cima, imagine a sua voz em cada fala de Ana e lembre que a garantia cobre os 30 dias inteiros, porque o único jeito de perder aqui é deixar para depois mais uma vez.</p>
   </div>
 </section>
 
