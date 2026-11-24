@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>O Atalho dos 3 Verbos · Leffo</title>
-<meta name="description" content="O atalho de 3 verbos para falar italiano sem decorar conjugação. Teste em 10 segundos.">
+<meta name="description" content="Monte 250 frases em italiano com 3 verbos, sem decorar conjugação. 21 dias, 20 minutos por dia.">
 <meta property="og:title" content="O Atalho dos 3 Verbos">
-<meta property="og:description" content="O atalho de 3 verbos para falar italiano sem decorar conjugação. Teste em 10 segundos.">
+<meta property="og:description" content="Monte 250 frases em italiano com 3 verbos, sem decorar conjugação.">
 <meta property="og:url" content="https://lf.korium.co/atalho/">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0b1324">
+<meta name="theme-color" content="#07090f">
 <link rel="icon" href="icone.svg" type="image/svg+xml">
 <link rel="icon" href="icone-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -23,162 +23,261 @@
 :root {
   --tinta: #0f172a;
   --suave: #475569;
+  --preto: #07090f;
   --noite: #0b1324;
   --noite-2: #111c33;
-  --fundo: #f6f8fb;
+  --borda-escura: #22304d;
+  --fundo: #f4f6fa;
   --branco: #ffffff;
   --verde: #0f9d58;
+  --verde-claro: #4ade80;
   --verde-escuro: #0b7a44;
   --vermelho: #d7261e;
   --azul: #1d4ed8;
+  --azul-claro: #7aa2ff;
+  --ouro: #ffd43b;
   --linha: #e2e8f0;
   --raio: 16px;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; font-size: 17px; line-height: 1.6; color: var(--tinta); background: var(--branco); -webkit-font-smoothing: antialiased; }
-h1, h2, h3, .cta, .preco-valor { font-family: "Space Grotesk", "Inter", Arial, sans-serif; letter-spacing: -.02em; }
-h1 { font-size: clamp(28px, 7.6vw, 50px); line-height: 1.08; max-width: 15em; margin: 0 auto; font-weight: 700; text-wrap: balance; }
-h2 { font-size: clamp(26px, 6vw, 38px); line-height: 1.12; font-weight: 700; text-wrap: balance; }
-h3 { font-size: 21px; line-height: 1.25; font-weight: 700; }
+img { max-width: 100%; display: block; }
+h1, h2, h3, .cta, .preco-valor, .num-grande { font-family: "Space Grotesk", "Inter", Arial, sans-serif; letter-spacing: -.02em; }
+h1 { font-size: clamp(26px, 7.1vw, 46px); line-height: 1.05; font-weight: 700; text-wrap: balance; }
+h2 { font-size: clamp(26px, 6.4vw, 40px); line-height: 1.1; font-weight: 700; text-wrap: balance; }
+h3 { font-size: 20px; line-height: 1.25; font-weight: 700; }
 p + p { margin-top: 14px; }
 em { font-style: italic; }
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 18px; }
-.wrap-larga { max-width: 980px; margin: 0 auto; padding: 0 18px; }
-section { padding: 64px 0; }
+.wrap-larga { max-width: 1080px; margin: 0 auto; padding: 0 18px; }
+section { padding: 72px 0; }
 .centro { text-align: center; }
-.destaque-azul { color: var(--azul); }
-.destaque-vermelho { color: #ff5a52; }
 .sub { color: var(--suave); font-size: 18px; margin-top: 14px; }
+.sobretitulo { display: inline-block; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; color: var(--azul); margin-bottom: 12px; }
+.claro { background: var(--branco); }
+.cinza { background: var(--fundo); }
+.escuro { background: var(--preto); color: #d6dde9; }
+.escuro h2, .escuro h3 { color: #fff; }
+.escuro .sub { color: #9aa8c0; }
+.escuro .sobretitulo { color: var(--ouro); }
+.azul { color: var(--azul); }
+.escuro .azul, .hero .azul { color: var(--azul-claro); }
+.verde { color: var(--verde-claro); }
 
 /* barra do topo */
 .barra { background: var(--vermelho); color: #fff; text-align: center; font-size: 13px; font-weight: 800; letter-spacing: .02em; padding: 8px 12px; text-transform: uppercase; }
-.barra b { color: #ffe066; }
+.barra b { color: var(--ouro); }
 
 /* botões */
-.cta { display: inline-block; background: var(--verde); color: #fff; text-decoration: none; font-weight: 700; font-size: 19px; text-transform: uppercase; padding: 18px 28px; border-radius: 999px; box-shadow: 0 10px 26px rgba(15, 157, 88, .35); transition: transform .15s ease, background .15s ease; text-align: center; }
+.cta { display: inline-block; background: var(--verde); color: #fff; text-decoration: none; font-weight: 700; font-size: 19px; text-transform: uppercase; padding: 18px 30px; border-radius: 999px; box-shadow: 0 10px 30px rgba(15, 157, 88, .4); transition: transform .15s ease, background .15s ease; text-align: center; }
 .cta:hover { background: var(--verde-escuro); transform: translateY(-1px); }
+.cta small { display: block; font-size: 12px; font-weight: 600; text-transform: none; letter-spacing: 0; opacity: .9; margin-top: 2px; font-family: "Inter", sans-serif; }
 .cta-bloco { margin-top: 28px; text-align: center; }
-.selos { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 12px; font-size: 13px; color: var(--suave); }
+.selos { display: flex; justify-content: center; gap: 8px 16px; flex-wrap: wrap; margin-top: 12px; font-size: 13px; color: var(--suave); }
+.escuro .selos, .hero .selos { color: #9aa8c0; }
+.cta-pulsa { animation: pulsa 2.2s ease-in-out infinite; }
+@keyframes pulsa { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+@media (prefers-reduced-motion: reduce) { .cta-pulsa { animation: none; } html { scroll-behavior: auto; } }
 
-/* marca */
-.marca { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 18px; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 17px; letter-spacing: -.01em; }
+/* HERO */
+.hero { background: radial-gradient(120% 70% at 80% 10%, #16244a 0%, var(--preto) 60%); color: #d6dde9; padding: 28px 0 56px; overflow: hidden; }
+.hero h1 { color: #fff; }
+.marca { display: flex; align-items: center; justify-content: center; gap: 10px; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 16px; color: #fff; margin-bottom: 26px; }
 .marca img { border-radius: 8px; }
+.hero-grade { display: grid; gap: 30px; align-items: center; }
+.hero-texto { text-align: center; }
+.tag-publico { display: inline-block; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; color: var(--ouro); border: 1px solid #3a3215; background: #1a1708; border-radius: 999px; padding: 6px 14px; margin-bottom: 16px; }
+.passos { list-style: none; display: grid; gap: 10px; margin: 22px auto 0; max-width: 500px; text-align: left; font-size: 17px; line-height: 1.4; }
+.passos li { padding-left: 34px; position: relative; color: #d6dde9; }
+.passos li b { color: #fff; text-decoration: underline; text-decoration-color: var(--verde); text-underline-offset: 3px; }
+.passos li em { color: #fff; }
+.passos li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 23px; height: 23px; border-radius: 50%; background: var(--verde); color: #fff; font-size: 13px; font-weight: 800; display: grid; place-items: center; }
 
-/* hero */
-.hero { background: linear-gradient(180deg, #eef3ff 0%, var(--branco) 70%); padding-top: 40px; }
-.kicker { display: inline-block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--azul); background: #dbe6ff; border-radius: 999px; padding: 6px 14px; margin-bottom: 18px; }
-.passos { list-style: none; display: grid; gap: 10px; margin: 24px auto 0; max-width: 520px; text-align: left; font-size: 17px; line-height: 1.4; }
-.passos li { padding-left: 32px; position: relative; }
-.passos li b { text-decoration: underline; text-underline-offset: 3px; }
-.passos li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--verde); color: #fff; font-size: 13px; font-weight: 800; display: grid; place-items: center; }
+/* mockup do kit */
+.kit { position: relative; height: 450px; max-width: 400px; margin: 0 auto; width: 100%; }
+.kit::before { content: ""; position: absolute; inset: 10% 5% 0; background: radial-gradient(closest-side, rgba(29, 78, 216, .45), transparent); filter: blur(10px); }
+.livro { position: absolute; border-radius: 4px 10px 10px 4px; color: #fff; font-family: "Space Grotesk", sans-serif; line-height: 1.08; padding: 14px 12px; display: flex; flex-direction: column; box-shadow: inset 7px 0 0 rgba(0,0,0,.25), 0 22px 40px rgba(0,0,0,.55); }
+.livro b { font-size: 13px; margin-top: auto; }
+.livro small { font-size: 10px; opacity: .8; margin-top: 4px; font-family: "Inter", sans-serif; }
+.livro-principal { width: 168px; height: 236px; left: 50%; top: 215px; transform: translateX(-74%) rotate(-4deg); background: linear-gradient(160deg, #1d4ed8, #0b1324 85%); z-index: 3; padding: 16px 14px; }
+.livro-principal img { width: 42px; height: 42px; border-radius: 8px; }
+.livro-principal b { font-size: 21px; }
+.livro-principal small { font-size: 11px; }
+.livro-b { width: 100px; height: 140px; z-index: 1; }
+.livro-b b { font-size: 11px; }
+.lb1 { left: 2%; top: 300px; transform: rotate(-12deg); background: linear-gradient(160deg, #0f9d58, #075c33); }
+.lb2 { left: 20%; top: 318px; transform: rotate(-3deg); background: linear-gradient(160deg, #7c3aed, #3b1a78); z-index: 2; }
+.lb3 { right: 1%; top: 308px; transform: rotate(10deg); background: linear-gradient(160deg, #d7261e, #7a1410); }
+.celular { position: absolute; width: 128px; height: 256px; right: 10%; top: 190px; transform: rotate(6deg); background: #05070c; border: 2px solid #2b3650; border-radius: 26px; padding: 22px 8px 10px; z-index: 4; box-shadow: 0 26px 50px rgba(0,0,0,.6); }
+.celular::before { content: ""; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 36px; height: 6px; border-radius: 6px; background: #1b2336; }
+.tela { background: #fff; border-radius: 14px; height: 100%; padding: 8px 6px; color: var(--tinta); font-size: 8.5px; line-height: 1.2; overflow: hidden; }
+.tela strong { display: block; font-family: "Space Grotesk", sans-serif; font-size: 10px; border-bottom: 1.5px solid var(--tinta); padding-bottom: 4px; margin-bottom: 5px; }
+.tela div { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 3px; }
+.tela span { background: var(--fundo); border-radius: 3px; padding: 3px; }
+.tela span:first-child { background: #e7f6ee; color: var(--verde-escuro); font-weight: 700; }
+.tela .bl { filter: blur(1.6px); }
 
-/* demonstração */
-.demo { background: var(--noite); color: #e5e9f2; border: 3px solid #ffd43b; border-radius: 20px; padding: 22px 18px; margin: 28px auto 0; max-width: 560px; text-align: left; box-shadow: 0 24px 60px rgba(15, 23, 42, .25); }
-.demo-titulo { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 20px; color: #fff; line-height: 1.25; }
-.demo-rotulo { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #93a3bf; margin: 16px 0 8px; }
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chip { font: 600 16px/1 "Inter", sans-serif; color: #fff; background: var(--noite-2); border: 1px solid #2a3a5c; border-radius: 999px; padding: 10px 14px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
-.chip[aria-pressed="true"] { background: var(--verde); border-color: var(--verde); }
-.chips[data-grupo="chave"] .chip[aria-pressed="true"] { background: var(--azul); border-color: var(--azul); }
-.resultado { background: #fff; color: var(--tinta); border-radius: 14px; padding: 16px 18px; margin-top: 18px; text-align: center; }
-.res-it { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: clamp(24px, 6.4vw, 32px); line-height: 1.15; }
-.res-it .k { color: var(--azul); }
-.res-it .a { color: var(--verde); }
-.res-pron { font-size: 14px; color: var(--suave); margin-top: 4px; letter-spacing: .02em; }
-.res-pt { font-weight: 600; margin-top: 2px; }
-.demo-nota { font-size: 14px; color: #b8c3d6; margin-top: 14px; }
-.demo-nota b { color: #ffd43b; }
+/* foto no kit */
+.kit .foto { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 330px; height: auto; max-width: none; z-index: 0; -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 90%), linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%); -webkit-mask-composite: source-in; mask-image: linear-gradient(180deg, #000 55%, transparent 90%), linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%); mask-composite: intersect; }
 
-/* carta (estilo TSL) */
-.carta p { font-size: 18px; }
-.carta h2 { margin-bottom: 18px; }
-.carta-destaque { font-weight: 700; border-left: 4px solid var(--verde); padding-left: 14px; margin-top: 22px !important; }
+/* faixa que corre */
+.corre { background: var(--ouro); color: var(--preto); overflow: hidden; white-space: nowrap; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; padding: 10px 0; }
+.corre div { display: inline-block; animation: corre 28s linear infinite; }
+.corre span { margin: 0 14px; }
+@keyframes corre { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .corre div { animation: none; } }
 
-/* três opções */
-.opcoes { display: grid; gap: 14px; margin-top: 28px; }
-.opcao { border: 1px solid var(--linha); border-radius: var(--raio); padding: 20px; background: #fff; }
-.opcao p { color: var(--suave); margin-top: 6px; }
-.opcao .num { display: inline-block; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--suave); margin-bottom: 6px; }
-.opcao.escolha { border: 2px solid var(--verde); background: #f1fbf5; }
-.opcao.escolha .num { color: var(--verde-escuro); }
+/* situações (carrossel) */
+.trilho { display: grid; grid-auto-flow: column; grid-auto-columns: min(82%, 320px); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 18px 18px; margin: 28px -18px 0; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+.situacao { scroll-snap-align: start; background: #fff; border: 1px solid var(--linha); border-radius: 18px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.situacao .topo { display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--suave); }
+.situacao .topo b { color: var(--azul); }
+.situacao h3 { font-size: 21px; }
+.resolve { font-size: 14px; color: var(--suave); }
+.resolve b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--vermelho); }
+.diga { background: var(--noite); color: #fff; border-radius: 12px; padding: 12px 14px; margin-top: auto; }
+.diga b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--verde-claro); margin-bottom: 4px; }
+.diga p { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 17px; line-height: 1.3; }
+.diga p + p { margin-top: 6px; }
+.diga small { display: block; font-family: "Inter", sans-serif; font-weight: 400; font-size: 13px; color: #9aa8c0; }
+.arraste { text-align: center; font-size: 13px; color: var(--suave); margin-top: 4px; }
 
-/* a folha (tabela do atalho) */
-.folha { background: #fff; border-radius: 18px; box-shadow: 0 24px 60px rgba(15, 23, 42, .18), 0 0 0 1px var(--linha); padding: 18px; margin: 30px auto 0; max-width: 560px; text-align: left; position: relative; }
-.folha::before { content: ""; position: absolute; inset: -14px -10px auto auto; width: 120px; height: 120px; background: radial-gradient(circle, rgba(15,157,88,.25), transparent 70%); z-index: -1; }
-.folha-topo { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--tinta); padding-bottom: 8px; margin-bottom: 10px; }
+/* tela do produto (dia do plano) */
+.dia-mock { background: #fff; border-radius: 16px; box-shadow: 0 24px 50px rgba(15, 23, 42, .16), 0 0 0 1px var(--linha); padding: 18px; max-width: 420px; margin: 30px auto 0; font-size: 15px; }
+.dia-mock .cab-dia { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--tinta); padding-bottom: 8px; margin-bottom: 12px; font-family: "Space Grotesk", sans-serif; }
+.dia-mock .cab-dia b { font-size: 20px; }
+.dia-mock .cab-dia span { font-size: 12px; background: #e7f6ee; color: var(--verde-escuro); font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+.dia-mock ol { list-style: none; display: grid; gap: 10px; counter-reset: passo; }
+.dia-mock li { counter-increment: passo; padding-left: 34px; position: relative; }
+.dia-mock li::before { content: counter(passo); position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--azul); color: #fff; font-size: 13px; font-weight: 700; display: grid; place-items: center; }
+.dia-mock li small { display: block; color: var(--suave); font-size: 13px; }
+.dia-legenda { text-align: center; font-size: 13px; color: var(--suave); margin-top: 10px; }
+
+/* nunca × já */
+.perfis { display: grid; gap: 12px; margin-top: 24px; }
+.perfil { background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: var(--raio); padding: 20px; }
+.perfil h3 { font-size: 19px; margin-bottom: 6px; }
+.perfil p { color: #cbd5e1; font-size: 16px; }
+
+/* motivações (fotos) */
+.motivos { display: grid; gap: 14px; margin-top: 28px; }
+.motivo { position: relative; border-radius: 20px; overflow: hidden; min-height: 360px; display: flex; align-items: flex-end; color: #fff; isolation: isolate; }
+.motivo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.motivo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,9,15,0) 25%, rgba(7,9,15,.92) 85%); z-index: -1; }
+.motivo div { padding: 22px; }
+.motivo .tag { display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; background: var(--ouro); color: var(--preto); border-radius: 999px; padding: 3px 10px; margin-bottom: 8px; }
+.motivo h3 { font-size: 24px; color: #fff; }
+.motivo p { color: #dbe3f0; font-size: 16px; margin-top: 6px; }
+.motivo .it { font-family: "Space Grotesk", sans-serif; font-weight: 700; color: var(--verde-claro); }
+
+/* seção com foto de fundo */
+.com-foto { position: relative; isolation: isolate; }
+.com-foto > img.fundo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.com-foto::before { content: ""; position: absolute; inset: 0; background: rgba(7, 9, 15, .86); z-index: -1; }
+
+/* mosaico */
+.mosaico { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 26px; }
+.mosaico figure { position: relative; border-radius: 14px; overflow: hidden; aspect-ratio: 4 / 3; }
+.mosaico figure:first-child { grid-column: span 2; aspect-ratio: 16 / 9; }
+.mosaico img { width: 100%; height: 100%; object-fit: cover; }
+.mosaico figcaption { position: absolute; left: 10px; bottom: 8px; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.7); }
+
+/* faixa de números */
+.numeros { background: var(--noite); border-top: 1px solid var(--borda-escura); border-bottom: 1px solid var(--borda-escura); padding: 26px 0; }
+.numeros .wrap-larga { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; text-align: center; }
+.num-grande { font-size: clamp(30px, 7vw, 42px); font-weight: 700; color: #fff; line-height: 1; }
+.num-grande span { color: var(--azul-claro); }
+.num-rotulo { font-size: 13px; color: #9aa8c0; margin-top: 6px; }
+
+/* tabela (demonstração estática) */
+.folha { background: #fff; border-radius: 18px; box-shadow: 0 24px 60px rgba(15, 23, 42, .16), 0 0 0 1px var(--linha); padding: 18px; margin: 30px auto 0; max-width: 600px; text-align: left; }
+.folha-topo { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-bottom: 2px solid var(--tinta); padding-bottom: 8px; margin-bottom: 10px; }
 .folha-topo strong { font-family: "Space Grotesk", sans-serif; font-size: 18px; }
-.folha-topo span { font-size: 12px; color: var(--suave); text-transform: uppercase; letter-spacing: .08em; }
-.grade { display: grid; grid-template-columns: 1.1fr 1fr 1fr 1fr; gap: 6px; font-size: 14px; }
+.folha-topo span { font-size: 12px; color: var(--suave); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
+.grade { display: grid; grid-template-columns: 1.05fr 1fr 1fr 1fr; gap: 6px; font-size: 14px; }
 .grade div { padding: 8px 6px; border-radius: 8px; background: var(--fundo); line-height: 1.25; }
+.grade small { display: block; font-size: 11px; color: var(--suave); font-weight: 500; }
 .grade .cab { background: var(--noite); color: #fff; font-weight: 700; text-align: center; }
-.grade .cab small { display: block; font-weight: 500; font-size: 11px; opacity: .75; }
+.grade .cab small { color: #b8c3d6; }
 .grade .lin { background: #e7f6ee; font-weight: 700; color: var(--verde-escuro); }
-.grade .lin small { display: block; font-weight: 500; font-size: 11px; color: var(--suave); }
+.grade .frase b { color: var(--verde-escuro); }
 .grade .borrado { filter: blur(3.5px); user-select: none; }
-.folha-rodape { font-size: 12px; color: var(--suave); margin-top: 10px; text-align: center; }
+.folha-rodape { font-size: 12.5px; color: var(--suave); margin-top: 10px; text-align: center; }
+.repare { max-width: 600px; margin: 22px auto 0; background: var(--noite); color: #dbe3f0; border-radius: var(--raio); padding: 18px 20px; font-size: 17px; }
+.repare b { color: var(--verde-claro); }
 
-/* seção escura */
-.escura { background: var(--noite); color: #e5e9f2; }
-.escura h2 { color: #fff; }
-.cenas { display: grid; gap: 14px; margin-top: 32px; }
-.cena { background: var(--noite-2); border: 1px solid #1e2b47; border-radius: var(--raio); padding: 20px 22px; }
+/* cenas */
+.cenas { display: grid; gap: 12px; margin-top: 30px; }
+.cena { background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: var(--raio); padding: 18px 20px; }
 .cena strong { color: #fff; display: block; margin-bottom: 4px; font-family: "Space Grotesk", sans-serif; font-size: 18px; }
-.virada { margin-top: 34px; font-size: 20px; color: #fff; text-align: center; font-weight: 600; }
+.virada { margin-top: 30px; font-size: 21px; color: #fff; text-align: center; font-weight: 700; font-family: "Space Grotesk", sans-serif; }
 
-/* bloco revelação */
-.cinza { background: var(--fundo); }
-.pergunta { font-family: "Space Grotesk", sans-serif; font-size: 24px; font-weight: 700; text-align: center; margin: 24px 0 8px; }
+/* carta curta */
+.carta p { font-size: 18px; }
+.carta h2 { margin-bottom: 20px; }
+.paralelo { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--linha); border-radius: var(--raio); overflow: hidden; margin: 24px 0; background: #fff; }
+.paralelo div { padding: 12px 14px; border-bottom: 1px solid var(--linha); font-size: 16px; }
+.paralelo .t { background: var(--noite); color: #fff; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.paralelo div:nth-last-child(-n+2) { border-bottom: 0; }
+.paralelo .it { font-family: "Space Grotesk", sans-serif; font-weight: 700; }
+.paralelo u { text-decoration-color: var(--verde); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.destaque { border-left: 4px solid var(--verde); padding-left: 14px; margin-top: 22px !important; }
+
+/* história */
+.historia { display: grid; gap: 26px; align-items: start; }
+.retrato { width: 168px; margin: 0 auto; text-align: center; }
+.retrato img { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; border: 3px solid var(--borda-escura); box-shadow: 0 20px 40px rgba(0,0,0,.5); }
+.retrato p { font-size: 13px; color: #9aa8c0; margin-top: 10px; }
+.retrato b { color: #fff; display: block; font-size: 15px; }
+.historia-texto p { font-size: 18px; }
+.historia-texto h2 { margin-bottom: 18px; }
+.historia-texto .erro { background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: 12px; padding: 12px 16px; font-size: 16px; }
+.erro s { color: #ff7b73; }
+.erro b { color: var(--verde-claro); }
+.lema { font-family: "Space Grotesk", sans-serif; font-size: 22px; color: #fff; font-weight: 700; margin-top: 24px !important; line-height: 1.25; }
+.lema small { display: block; font-family: "Inter", sans-serif; font-size: 14px; color: #9aa8c0; font-weight: 500; margin-top: 4px; }
+.prova-link { display: flex; gap: 14px; align-items: center; background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: 14px; padding: 14px 16px; margin-top: 22px; color: #d6dde9; text-decoration: none; font-size: 15px; line-height: 1.45; }
+.prova-link b { color: #fff; }
+.prova-link .n { font-family: "Space Grotesk", sans-serif; font-size: 30px; font-weight: 700; color: var(--ouro); line-height: 1; }
 
 /* como funciona */
-.partes { display: grid; gap: 16px; margin-top: 30px; }
+.partes { display: grid; gap: 14px; margin-top: 30px; }
 .parte { border: 1px solid var(--linha); border-radius: var(--raio); padding: 22px; background: #fff; }
-.parte .num { display: inline-block; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 13px; color: #fff; background: var(--azul); border-radius: 999px; padding: 3px 12px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .06em; }
-.parte p { color: var(--suave); margin-top: 8px; }
-.linha-tempo { list-style: none; margin-top: 34px; border-left: 3px solid var(--verde); padding-left: 22px; display: grid; gap: 18px; }
+.parte .etiqueta { display: inline-block; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 12px; color: #fff; background: var(--azul); border-radius: 999px; padding: 3px 12px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .06em; }
+.parte p { color: var(--suave); margin-top: 6px; font-size: 16px; }
+.linha-tempo { list-style: none; margin: 34px auto 0; max-width: 620px; border-left: 3px solid var(--verde); padding-left: 22px; display: grid; gap: 18px; }
 .linha-tempo li { position: relative; }
 .linha-tempo li::before { content: ""; position: absolute; left: -31px; top: 6px; width: 15px; height: 15px; border-radius: 50%; background: #fff; border: 3px solid var(--verde); }
 .linha-tempo b { font-family: "Space Grotesk", sans-serif; display: block; font-size: 18px; }
+.sem-titulo { text-align: center; margin-top: 34px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; color: var(--suave); }
+.sem { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 12px; }
+.sem span { background: #fff; border: 1px solid var(--linha); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 600; }
+.sem span::before { content: "✕ "; color: var(--vermelho); }
 
 /* bullets */
 .bullets { list-style: none; display: grid; gap: 12px; margin-top: 28px; }
-.bullets li { background: #fff; border: 1px solid var(--linha); border-radius: 14px; padding: 14px 16px 14px 48px; position: relative; }
-.bullets li::before { content: "→"; position: absolute; left: 16px; top: 13px; font-weight: 800; color: var(--verde); font-size: 18px; }
-.bullets small { color: var(--suave); }
-
-/* custos */
-.custos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
-.custo { background: #fff; border-radius: 14px; border: 1px solid var(--linha); padding: 18px; }
-.custo b { font-family: "Space Grotesk", sans-serif; font-size: 18px; display: block; }
-.custo span { color: var(--suave); font-size: 15px; }
+.bullets li { background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: 14px; padding: 15px 16px 15px 50px; position: relative; color: #d6dde9; }
+.bullets li b { color: #fff; }
+.bullets li::before { content: "→"; position: absolute; left: 18px; top: 14px; font-weight: 800; color: var(--verde-claro); font-size: 18px; }
 
 /* para quem */
-.duas { display: grid; gap: 16px; margin-top: 28px; }
+.duas { display: grid; gap: 14px; margin-top: 28px; }
 .lista-sim, .lista-nao { list-style: none; border-radius: var(--raio); padding: 22px; display: grid; gap: 10px; }
 .lista-sim { background: #e7f6ee; }
 .lista-nao { background: #fdecea; }
-.lista-sim li::before { content: "✓  "; color: var(--verde-escuro); font-weight: 800; }
-.lista-nao li::before { content: "✕  "; color: var(--vermelho); font-weight: 800; }
+.lista-sim li:not(.lista-titulo)::before { content: "✓  "; color: var(--verde-escuro); font-weight: 800; }
+.lista-nao li:not(.lista-titulo)::before { content: "✕  "; color: var(--vermelho); font-weight: 800; }
 .lista-titulo { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 19px; }
 
-/* oferta */
-.oferta { background: var(--noite); color: #fff; }
-.cartao { background: #fff; color: var(--tinta); border-radius: 22px; padding: 26px 22px; margin-top: 30px; box-shadow: 0 30px 70px rgba(0,0,0,.35); }
-.preco { text-align: center; margin-top: 24px; }
-.preco-de { color: var(--suave); font-size: 15px; }
-.preco-valor { font-size: 56px; font-weight: 700; line-height: 1; margin: 6px 0; }
-.preco-valor small { font-size: 24px; vertical-align: top; margin-right: 4px; }
-.preco-parc { color: var(--suave); font-size: 15px; }
-.comparacao { background: var(--fundo); border-radius: 12px; padding: 14px 16px; font-size: 15px; margin-top: 18px; color: var(--suave); }
-
 /* oferta: pilha de valor */
-.kicker-escuro { background: #1e2b47; color: #ffd43b; display: table; margin: 0 auto 14px; }
-.destaque-verde { color: #4ade80; }
-.capa { border-radius: 6px 12px 12px 6px; aspect-ratio: 3 / 4; padding: 12px 10px; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; box-shadow: inset 6px 0 0 rgba(0,0,0,.18), 0 12px 24px rgba(0,0,0,.35); font-family: "Space Grotesk", sans-serif; line-height: 1.1; }
-.capa b { font-size: 15px; }
+.oferta { background: radial-gradient(120% 60% at 50% 0%, #16244a 0%, var(--preto) 55%); color: #fff; }
+.oferta .sobretitulo { color: var(--ouro); }
+.oferta h2 { color: #fff; }
+.capa { border-radius: 5px 12px 12px 5px; aspect-ratio: 3 / 4; padding: 12px 10px; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; box-shadow: inset 6px 0 0 rgba(0,0,0,.2), 0 12px 24px rgba(0,0,0,.4); font-family: "Space Grotesk", sans-serif; line-height: 1.1; }
+.capa b { font-size: 14px; }
 .capa small { font-size: 11px; opacity: .8; margin-top: 4px; }
 .capa-icone { margin-bottom: auto; border-radius: 8px; }
-.capa-marca { font-size: 30px; font-weight: 700; letter-spacing: -.12em; margin-bottom: auto; background: linear-gradient(90deg, #22c55e 0 33%, #fff 33% 66%, #ef4444 66%); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .capa-principal { background: linear-gradient(160deg, #1d4ed8, #0b1324); }
 .capa-b1 { background: linear-gradient(160deg, #0f9d58, #075c33); }
 .capa-b2 { background: linear-gradient(160deg, #7c3aed, #3b1a78); }
@@ -186,64 +285,116 @@ section { padding: 64px 0; }
 .capa-b4 { background: linear-gradient(160deg, #0891b2, #0c4a5e); }
 .capa-b5 { background: linear-gradient(160deg, #475569, #1e293b); }
 .capa-b6 { background: linear-gradient(160deg, #d7261e, #7a1410); }
-.principal { display: grid; grid-template-columns: 120px 1fr; gap: 18px; align-items: center; background: var(--noite-2); border: 1px solid #2a3a5c; border-radius: 18px; padding: 18px; margin-top: 26px; }
+.principal { display: grid; grid-template-columns: 110px 1fr; gap: 18px; align-items: center; background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: 18px; padding: 18px; margin-top: 26px; }
 .rotulo { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #93a3bf; font-weight: 700; }
 .principal h3 { color: #fff; margin: 2px 0 8px; }
 .mini { list-style: none; display: grid; gap: 4px; font-size: 15px; color: #cbd5e1; }
-.mini li::before { content: "✓ "; color: #4ade80; font-weight: 800; }
+.mini li::before { content: "✓ "; color: var(--verde-claro); font-weight: 800; }
 .valor { margin-top: 10px; font-size: 15px; color: #93a3bf; }
-.valor s { color: #93a3bf; }
-.valor b { color: #4ade80; text-transform: uppercase; font-size: 14px; letter-spacing: .04em; margin-left: 4px; }
-.bonus-grade { display: grid; gap: 14px; margin-top: 14px; }
-.bonus-card { display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; background: var(--noite-2); border: 1px solid #2a3a5c; border-radius: 18px; padding: 16px; }
+.valor b { color: var(--verde-claro); text-transform: uppercase; font-size: 14px; letter-spacing: .04em; margin-left: 4px; }
+.bonus-grade { display: grid; gap: 12px; margin-top: 12px; }
+.bonus-card { display: grid; grid-template-columns: 88px 1fr; gap: 16px; align-items: start; background: var(--noite-2); border: 1px solid var(--borda-escura); border-radius: 18px; padding: 16px; }
 .bonus-card h3 { color: #fff; font-size: 18px; margin: 6px 0 4px; }
 .bonus-card p { font-size: 15px; color: #cbd5e1; }
-.bonus-card .capa b { font-size: 12.5px; }
-.bonus-tag { display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; background: #ffd43b; color: #0b1324; border-radius: 999px; padding: 3px 10px; }
+.bonus-card .capa b { font-size: 12px; }
+.bonus-tag { display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; background: var(--ouro); color: var(--preto); border-radius: 999px; padding: 3px 10px; }
 .bonus-tag-prazo { background: var(--vermelho); color: #fff; }
 .destaque-prazo { border-color: var(--vermelho); }
+.cartao { background: #fff; color: var(--tinta); border-radius: 22px; padding: 26px 20px; margin-top: 26px; box-shadow: 0 30px 70px rgba(0,0,0,.4); }
 .pilha { list-style: none; display: grid; gap: 10px; }
 .pilha li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dashed var(--linha); padding-bottom: 10px; font-size: 15px; }
 .pilha li span:last-child { color: var(--suave); white-space: nowrap; }
 .total { text-align: center; margin-top: 16px; font-weight: 700; color: var(--suave); }
 .total s { color: var(--vermelho); white-space: nowrap; }
+.preco { text-align: center; margin-top: 18px; }
+.preco-de { color: var(--suave); font-size: 15px; }
+.preco-valor { font-size: 64px; font-weight: 700; line-height: 1; margin: 6px 0; }
+.preco-valor small { font-size: 26px; vertical-align: top; margin-right: 4px; }
+.preco-parc { color: var(--suave); font-size: 15px; }
+.cartao .selos { color: var(--suave); }
+.comparacao { background: var(--fundo); border-radius: 12px; padding: 14px 16px; font-size: 15px; margin-top: 18px; color: var(--suave); }
 .nota-valores { font-size: 12px; color: var(--suave); margin-top: 12px; text-align: center; }
-.cta-pulsa { animation: pulsa 2.2s ease-in-out infinite; }
-@keyframes pulsa { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
-@media (prefers-reduced-motion: reduce) { .cta-pulsa { animation: none; } }
-@media (min-width: 760px) { .bonus-grade { grid-template-columns: 1fr 1fr; } .principal { grid-template-columns: 150px 1fr; padding: 24px; } }
-@media (max-width: 400px) { .bonus-card { grid-template-columns: 78px 1fr; gap: 12px; } .principal { grid-template-columns: 96px 1fr; } .capa b { font-size: 12px; } }
 
 /* garantia */
-.garantia { display: grid; grid-template-columns: 96px 1fr; gap: 18px; align-items: center; border: 2px solid var(--verde); border-radius: 22px; padding: 24px; }
+.garantia { display: grid; grid-template-columns: 96px 1fr; gap: 18px; align-items: center; border: 2px solid var(--verde); border-radius: 22px; padding: 24px; background: #fff; }
 .selo { width: 96px; height: 96px; border-radius: 50%; background: var(--verde); color: #fff; display: grid; place-items: center; text-align: center; font-family: "Space Grotesk", sans-serif; font-weight: 700; line-height: 1; }
 .selo span { font-size: 34px; display: block; }
 .selo small { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
 
+/* opções */
+.opcoes { display: grid; gap: 12px; margin-top: 28px; }
+.opcao { border: 1px solid var(--linha); border-radius: var(--raio); padding: 20px; background: #fff; }
+.opcao p { color: var(--suave); margin-top: 6px; font-size: 16px; }
+.opcao .etiqueta { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--suave); }
+.opcao.escolha { border: 2px solid var(--verde); background: #f1fbf5; }
+.opcao.escolha .etiqueta { color: var(--verde-escuro); }
+.pergunta { font-family: "Space Grotesk", sans-serif; font-size: 24px; font-weight: 700; text-align: center; margin: 28px 0 6px; }
+
 /* faq */
 details { border-bottom: 1px solid var(--linha); padding: 18px 0; }
 summary { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+summary::-webkit-details-marker { display: none; }
 summary::after { content: "+"; color: var(--verde); font-size: 24px; line-height: 1; }
 details[open] summary::after { content: "−"; }
 details p { margin-top: 10px; color: var(--suave); }
 
-footer { background: var(--noite); color: #8a97ad; font-size: 13px; padding: 34px 0 46px; text-align: center; }
+footer { background: var(--preto); color: #8a97ad; font-size: 13px; padding: 34px 0 110px; text-align: center; }
 footer a { color: #c4cee0; }
 footer p + p { margin-top: 10px; }
 
-@media (min-width: 760px) {
-  .partes { grid-template-columns: repeat(3, 1fr); }
-  .duas { grid-template-columns: 1fr 1fr; }
-  .cenas { grid-template-columns: 1fr 1fr; }
-  .opcoes { grid-template-columns: repeat(3, 1fr); }
-  .demo { padding: 28px; }
-  .cartao { padding: 34px; }
+/* barra fixa de compra (celular) */
+.fixa { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: rgba(7, 9, 15, .96); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-top: 1px solid var(--borda-escura); padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); display: flex; align-items: center; justify-content: space-between; gap: 12px; transform: translateY(110%); transition: transform .25s ease; }
+.fixa.visivel { transform: none; }
+.fixa-preco { color: #fff; font-family: "Space Grotesk", sans-serif; line-height: 1.1; }
+.fixa-preco b { font-size: 22px; }
+.fixa-preco small { display: block; font-family: "Inter", sans-serif; font-size: 11.5px; color: #9aa8c0; }
+.fixa .cta { font-size: 15px; padding: 12px 18px; box-shadow: none; }
+
+@media (min-width: 860px) {
+  section { padding: 88px 0; }
+  .hero { padding: 32px 0 72px; }
+  .marca { justify-content: flex-start; }
+  .hero-grade { grid-template-columns: 1.3fr .9fr; }
+  .hero h1 { font-size: clamp(36px, 4.2vw, 46px); }
+  .hero-texto { text-align: left; }
+  .passos { margin-left: 0; }
+  .hero .cta-bloco { text-align: left; }
+  .hero .selos { justify-content: flex-start; }
+  .kit { height: 500px; }
+  .kit .foto { width: 420px; top: -10px; }
+  .livro-principal { top: 250px; }
+  .celular { top: 225px; }
+  .lb1 { top: 340px; } .lb2 { top: 358px; } .lb3 { top: 348px; }
 }
+@media (min-width: 760px) {
+  .numeros .wrap-larga { grid-template-columns: repeat(4, 1fr); }
+  .cenas { grid-template-columns: 1fr 1fr; }
+  .historia { grid-template-columns: 190px 1fr; }
+  .retrato { width: 190px; }
+  .retrato img { width: 190px; height: 190px; }
+  .partes { grid-template-columns: repeat(3, 1fr); }
+  .perfis { grid-template-columns: 1fr 1fr; }
+  .motivos { grid-template-columns: 1fr 1fr; }
+  .motivo { min-height: 440px; }
+  .mosaico { grid-template-columns: repeat(4, 1fr); }
+  .mosaico figure:first-child { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
+  .trilho { margin: 28px 0 0; padding: 6px 0 18px; grid-auto-columns: 300px; }
+  .duas { grid-template-columns: 1fr 1fr; }
+  .bonus-grade { grid-template-columns: 1fr 1fr; }
+  .principal { grid-template-columns: 140px 1fr; padding: 24px; }
+  .cartao { padding: 34px; }
+  .opcoes { grid-template-columns: repeat(3, 1fr); }
+  .fixa { display: none; }
+  footer { padding-bottom: 46px; }
+}
+@media (max-width: 340px) { h1 { font-size: 24px; } }
 @media (max-width: 400px) {
   .grade { font-size: 12.5px; gap: 4px; }
   .grade div { padding: 7px 4px; }
-  .custos { grid-template-columns: 1fr; }
   .garantia { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .bonus-card { grid-template-columns: 74px 1fr; gap: 12px; }
+  .principal { grid-template-columns: 90px 1fr; }
+  .capa b { font-size: 12px; }
 }
 </style>
 </head>
@@ -251,50 +402,65 @@ footer p + p { margin-top: 10px; }
 
 <div class="barra">Bônus de lançamento: e-book <b>Italiano Sozinho em 30 Dias</b> grátis até <b>31/12</b></div>
 
-<!-- HERO -->
+<!-- 1. HERO -->
 <header class="hero">
-  <div class="wrap centro">
-    <div class="marca"><img src="icone.svg" alt="" width="34" height="34"><span>O Atalho dos 3 Verbos</span></div>
-    <span class="kicker">Demonstração de 10 segundos</span>
-    <h1>O atalho de <span class="destaque-azul">3 verbos</span> para falar italiano sem decorar conjugação</h1>
-    <ul class="passos">
-      <li><b>Passo 1:</b> escolha um verbo: <em>voglio</em>, <em>posso</em> ou <em>devo</em></li>
-      <li><b>Passo 2:</b> ponha depois dele qualquer verbo, do jeito que está no dicionário</li>
-      <li><b>Passo 3:</b> fale. <em>“Voglio mangiare.”</em> Você não conjugou nada.</li>
-    </ul>
-
-    <div class="demo" id="demo">
-      <p class="demo-titulo">Teste agora. Toque em um verbo de cada linha.</p>
-      <p class="demo-rotulo">1 · o verbo-chave</p>
-      <div class="chips" data-grupo="chave"></div>
-      <p class="demo-rotulo">2 · qualquer verbo do dicionário</p>
-      <div class="chips" data-grupo="acao"></div>
-      <div class="resultado" aria-live="polite">
-        <p class="res-it" id="res-it">Voglio mangiare</p>
-        <p class="res-pron" id="res-pron">VÓ-lho man-DJA-re</p>
-        <p class="res-pt" id="res-pt">Eu quero comer</p>
+  <div class="wrap-larga">
+    <div class="marca"><img src="icone.svg" alt="" width="32" height="32"><span>O Atalho dos 3 Verbos</span></div>
+    <div class="hero-grade">
+      <div class="hero-texto">
+        <span class="tag-publico">Para quem entende italiano, mas trava na hora de falar</span>
+        <h1>Monte 250 frases em italiano com <span class="azul">3 verbos</span>, sem decorar conjugação</h1>
+        <ul class="passos">
+          <li><b>Passo 1:</b> escolha um verbo: <em>voglio</em>, <em>posso</em> ou <em>devo</em></li>
+          <li><b>Passo 2:</b> ponha depois dele qualquer verbo, do jeito que está no dicionário</li>
+          <li><b>Passo 3:</b> fale. <em>“Voglio mangiare.”</em> Pronto: você não conjugou nada.</li>
+        </ul>
+        <div class="cta-bloco">
+          <a class="cta" href="#oferta">Quero o atalho<small>R$ 67 · acesso imediato</small></a>
+          <div class="selos"><span>🔒 Compra segura</span><span>📱 Lê no celular</span><span>🛡️ Garantia de 30 dias</span></div>
+        </div>
       </div>
-      <p class="demo-nota">Repare: o segundo verbo <b>nunca muda</b>. Frases que você montou: <b id="contador">1</b> de 40 possíveis aqui. Na tabela completa são 250.</p>
-    </div>
-
-    <div class="cta-bloco">
-      <a class="cta" href="#oferta">Quero o atalho completo</a>
-      <div class="selos"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span><span>🛡️ Garantia de 30 dias</span></div>
+      <div class="kit" aria-label="O Atalho dos 3 Verbos e os bônus">
+        <img class="foto" src="img/chapeu.jpg" alt="" width="900" height="900">
+        <div class="livro livro-b lb1"><b>Kit Viagem</b><small>80 frases</small></div>
+        <div class="livro livro-b lb2"><b>Os 7 sons do sotaque</b></div>
+        <div class="livro livro-b lb3"><b>Italiano Sozinho em 30 Dias</b></div>
+        <div class="livro livro-principal"><img src="icone.svg" alt="" width="42" height="42"><b>O Atalho dos 3 Verbos</b><small>Tabela + Plano de 21 Dias</small></div>
+        <div class="celular"><div class="tela">
+          <strong>Tabela do Atalho</strong>
+          <div><span>voglio</span><span>mangiare</span></div>
+          <div><span>posso</span><span>pagare</span></div>
+          <div><span>devo</span><span>andare</span></div>
+          <div><span>vorrei</span><span>parlare</span></div>
+          <div class="bl"><span>mi piace</span><span>viaggiare</span></div>
+          <div class="bl"><span>voglio</span><span>comprare</span></div>
+          <div class="bl"><span>posso</span><span>entrare</span></div>
+          <div class="bl"><span>devo</span><span>partire</span></div>
+          <div class="bl"><span>vorrei</span><span>prenotare</span></div>
+          <div class="bl"><span>mi piace</span><span>leggere</span></div>
+        </div></div>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- VIU COMO FOI FÁCIL (MECANISMO) -->
-<section class="cinza">
-  <div class="wrap carta">
-    <h2>Viu como foi fácil?</h2>
-    <p>Você acabou de montar uma frase em italiano sem conjugar verbo nenhum.</p>
-    <p>E pode trocar o segundo verbo por qualquer outro do dicionário, que a frase continua certa.</p>
-    <p>Não é truque. A gramática italiana tem até nome para esses verbos: <b><em>verbi servili</em></b>, os “verbos servos”. Eles carregam a conjugação sozinhos, e o verbo que vem depois fica no infinitivo, do jeito que está no dicionário.</p>
-    <p>Você já faz isso em português sem perceber: <b>quero comer</b>, <b>posso pagar</b>, <b>preciso ir</b>. O <em>comer</em>, o <em>pagar</em> e o <em>ir</em> nunca mudam.</p>
-    <p>O italiano funciona igual. Só que quase nenhum curso começa por aí.</p>
-    <p class="carta-destaque">Agora imagine isso numa folha só: 5 verbos-chave × 50 verbos de ação. São 250 frases do dia a dia, com a pronúncia escrita do jeito que se fala.</p>
+<div class="corre" aria-hidden="true"><div><span>3 verbos</span>·<span>250 frases</span>·<span>21 dias</span>·<span>+ 6 bônus</span>·<span>Bônus de lançamento até 31/12</span>·<span>Garantia de 30 dias</span>·<span>3 verbos</span>·<span>250 frases</span>·<span>21 dias</span>·<span>+ 6 bônus</span>·<span>Bônus de lançamento até 31/12</span>·<span>Garantia de 30 dias</span>·<span>3 verbos</span>·<span>250 frases</span>·<span>21 dias</span>·<span>+ 6 bônus</span>·<span>Bônus de lançamento até 31/12</span>·<span>Garantia de 30 dias</span>·<span>3 verbos</span>·<span>250 frases</span>·<span>21 dias</span>·<span>+ 6 bônus</span>·<span>Bônus de lançamento até 31/12</span>·<span>Garantia de 30 dias</span>·</div></div>
 
+<!-- 2. NÚMEROS -->
+<div class="numeros">
+  <div class="wrap-larga">
+    <div><p class="num-grande"><span>3</span> verbos</p><p class="num-rotulo">+ 2 coringas</p></div>
+    <div><p class="num-grande"><span>250</span></p><p class="num-rotulo">frases do dia a dia</p></div>
+    <div><p class="num-grande"><span>21</span> dias</p><p class="num-rotulo">de plano, dia a dia</p></div>
+    <div><p class="num-grande"><span>20</span> min</p><p class="num-rotulo">por dia, sem videoaula</p></div>
+  </div>
+</div>
+
+<!-- 3. A TABELA -->
+<section class="claro">
+  <div class="wrap centro">
+    <span class="sobretitulo">Veja como funciona</span>
+    <h2>Uma folha só. Agora repare no segundo verbo.</h2>
     <div class="folha" aria-label="Prévia da Tabela do Atalho">
       <div class="folha-topo"><strong>A Tabela do Atalho</strong><span>1 folha · 250 frases</span></div>
       <div class="grade">
@@ -303,15 +469,15 @@ footer p + p { margin-top: 10px; }
         <div class="cab">pagare<small>pagar</small></div>
         <div class="cab">andare<small>ir</small></div>
         <div class="lin">voglio<small>eu quero</small></div>
-        <div>voglio mangiare</div>
-        <div>voglio pagare</div>
-        <div>voglio andare</div>
+        <div class="frase">voglio <b>mangiare</b></div>
+        <div class="frase">voglio <b>pagare</b></div>
+        <div class="frase">voglio <b>andare</b></div>
         <div class="lin">posso<small>eu posso</small></div>
-        <div>posso mangiare</div>
-        <div>posso pagare</div>
-        <div>posso andare</div>
+        <div class="frase">posso <b>mangiare</b></div>
+        <div class="frase">posso <b>pagare</b></div>
+        <div class="frase">posso <b>andare</b></div>
         <div class="lin">devo<small>eu preciso</small></div>
-        <div>devo mangiare</div>
+        <div class="frase">devo <b>mangiare</b></div>
         <div class="borrado">devo pagare</div>
         <div class="borrado">devo andare</div>
         <div class="lin borrado">vorrei<small>…</small></div>
@@ -319,119 +485,185 @@ footer p + p { margin-top: 10px; }
         <div class="borrado">vorrei pagare</div>
         <div class="borrado">vorrei andare</div>
       </div>
-      <p class="folha-rodape">+ 47 verbos de ação, negação e pergunta na versão completa</p>
+      <p class="folha-rodape">Na versão completa: 5 verbos-chave × 50 verbos de ação, negação, pergunta e a pronúncia escrita do jeito que se fala.</p>
     </div>
+    <p class="repare">O segundo verbo <b>nunca muda</b>: fica do jeito que está no dicionário. Quem carrega a conjugação é o primeiro, e são só três.</p>
     <div class="cta-bloco"><a class="cta" href="#oferta">Quero a tabela completa</a></div>
   </div>
 </section>
 
-<!-- CENA / DOR -->
-<section class="escura">
-  <div class="wrap">
-    <h2 class="centro">Se você estuda italiano há meses, provavelmente <span class="destaque-vermelho">já viveu uma dessas cenas:</span></h2>
-    <div class="cenas">
-      <div class="cena"><strong>O app de todo dia</strong>Você abre o aplicativo, conjuga <em>mangiare</em> nas seis pessoas, ganha a sequência do dia e fecha sem conseguir dizer uma frase sobre você mesmo.</div>
-      <div class="cena"><strong>A cena do café</strong>Você imagina a viagem e já sabe o que vai acontecer: aponta para o cardápio, sorri e acaba falando inglês, ou português devagar.</div>
-      <div class="cena"><strong>A família</strong>Ouve a nonna, a tia ou um vídeo da Itália, entende metade e não sabe responder nada.</div>
-      <div class="cena"><strong>O caderno</strong>Já começou com caderno, curso, lista de verbos, vídeo salvo. Três semanas depois, parou de novo.</div>
-    </div>
-    <p class="virada">Antes de concluir que você não leva jeito para idioma, vale olhar <u>por onde</u> te mandaram começar.</p>
-  </div>
-</section>
-
-<!-- VILÃO -->
-<section>
-  <div class="wrap">
-    <h2>Você não trava por falta de vocabulário. <span class="destaque-azul">Trava por causa da conjugação.</span></h2>
-    <p class="sub">E não é culpa sua nem do professor: é a ordem tradicional de ensinar.</p>
-    <p style="margin-top:22px">No italiano, cada verbo muda conforme quem fala. <em>Io mangio, tu mangi, lui mangia, noi mangiamo, voi mangiate, loro mangiano.</em> Seis formas para um verbo só. Multiplique isso pelos verbos que você precisa e pelos tempos verbais, e está explicado por que tanta gente estuda meses e trava na hora de abrir a boca: a cabeça fica procurando a terminação certa enquanto a conversa já passou.</p>
-    <p>O problema é que, no começo, você quase não precisa disso. Nos primeiros meses, o que você mais diz é o que <b>quer</b>, o que <b>pode</b> e o que <b>precisa</b> fazer: pedir, perguntar, combinar, falar de você.</p>
-    <p>E é exatamente aí que entram os 3 verbos que você acabou de testar: <b>voglio, posso, devo</b>. Some dois coringas, <b>vorrei</b> (eu gostaria de) e <b>mi piace</b> (eu gosto de), e você monta centenas de frases do dia a dia antes de abrir qualquer tabela de conjugação.</p>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
+<!-- 3b. MOTIVAÇÕES -->
 <section class="cinza">
   <div class="wrap-larga">
-    <h2 class="centro">Como funciona <span class="destaque-azul">O Atalho dos 3 Verbos</span></h2>
-    <div class="partes">
-      <div class="parte"><span class="num">Parte 1</span><h3>O Atalho</h3><p>A Tabela do Atalho: 5 verbos-chave × 50 verbos de ação, com negação e pergunta. Pronúncia escrita do jeito que se fala, para você não depender de áudio.</p></div>
-      <div class="parte"><span class="num">Parte 2</span><h3>O Plano de 21 Dias</h3><p>20 minutos por dia, com o exercício do dia já pronto. Semana 1: montar frases. Semana 2: perguntar e se virar. Semana 3: falar de você e conversar.</p></div>
-      <div class="parte"><span class="num">Parte 3</span><h3>Depois do Atalho</h3><p>20 maneiras de continuar estudando italiano sozinho: shadowing, rotina, onde praticar de graça e como passar para a conjugação completa sem sensação de recomeço.</p></div>
+    <div class="centro"><span class="sobretitulo">Por que você quer o italiano</span>
+    <h2>Duas coisas que só acontecem <span class="azul">quando você fala</span></h2></div>
+    <div class="motivos">
+      <div class="motivo"><img src="img/italia/positano.jpg" alt="Positano, na Costa Amalfitana" loading="lazy" width="1024" height="683"><div><span class="tag">Conhecer a Itália</span><h3>Viver a viagem, não só fotografar</h3><p>Pedir no café, perguntar o caminho, entender o garçom. A Itália de verdade começa quando você abre a boca: <span class="it">“Vorrei un caffè, per favore.”</span></p></div></div>
+      <div class="motivo"><img src="img/italia/amigas.jpg" alt="Duas amigas brindando num jantar" loading="lazy"><div><span class="tag">Conectar com pessoas</span><h3>Conversar com quem importa</h3><p>A família na Itália, os amigos, a nonna, aquela pessoa que você conheceu na viagem. Responder em italiano, e não só sorrir: <span class="it">“Mi piace parlare con voi.”</span></p></div></div>
     </div>
-    <div class="wrap">
-      <ol class="linha-tempo">
-        <li><b>Dia 1</b>Você grava 1 minuto falando as primeiras frases da tabela. Guarda e não ouve de novo.</li>
-        <li><b>Dia 7</b>Já monta frases com os 3 verbos e os 2 coringas, em voz alta, sem olhar a folha.</li>
-        <li><b>Dia 14</b>Pergunta, pede, combina e pede para repetir: as situações de restaurante, loja, rua e família.</li>
-        <li><b>Dia 21</b>Fala de você, dos seus planos e do que gosta, e ouve a gravação do dia 1 para comparar.</li>
+  </div>
+</section>
+
+<!-- 4. CENAS -->
+<section class="escuro com-foto">
+  <img class="fundo" src="img/italia/rua-roma.jpg" alt="" loading="lazy" width="1024" height="711">
+  <div class="wrap">
+    <h2 class="centro">Se você estuda italiano há meses, provavelmente <span class="azul">já viveu uma dessas cenas</span></h2>
+    <div class="cenas">
+      <div class="cena"><strong>O app de todo dia</strong>Conjuga <em>mangiare</em> nas seis pessoas, ganha a sequência do dia e fecha o app sem conseguir dizer uma frase sobre você.</div>
+      <div class="cena"><strong>A cena do café</strong>Você imagina a viagem e já sabe o fim: aponta para o cardápio, sorri e acaba falando inglês.</div>
+      <div class="cena"><strong>A família</strong>Ouve a nonna, a tia ou um vídeo da Itália, entende metade e não sabe responder nada.</div>
+      <div class="cena"><strong>O caderno</strong>Caderno, curso, lista de verbos, vídeo salvo. Três semanas depois, parou de novo.</div>
+    </div>
+    <p class="virada">O problema não é você. É por onde te mandaram começar.</p>
+  </div>
+</section>
+
+<!-- 5. VILÃO + MECANISMO (E, MAS, PORTANTO) -->
+<section class="cinza">
+  <div class="wrap carta">
+    <span class="sobretitulo">O verdadeiro problema</span>
+    <h2>Você não trava por falta de vocabulário. <span class="azul">Trava por causa da conjugação.</span></h2>
+    <p>Quase todo curso começa pelo mesmo lugar: <em>io mangio, tu mangi, lui mangia, noi mangiamo, voi mangiate, loro mangiano.</em> Seis formas para um verbo só.</p>
+    <p><b>Mas</b> na hora de falar, a cabeça fica caçando a terminação certa, e a conversa já passou.</p>
+    <p><b>Só que</b> o italiano deixa uma porta aberta. Veja como você já fala em português:</p>
+    <div class="paralelo">
+      <div class="t">Português</div><div class="t">Italiano</div>
+      <div>eu quero <u>comer</u></div><div class="it">voglio <u>mangiare</u></div>
+      <div>eu posso <u>pagar</u>?</div><div class="it">posso <u>pagare</u>?</div>
+      <div>eu preciso <u>ir</u></div><div class="it">devo <u>andare</u></div>
+    </div>
+    <p>O segundo verbo não muda, nem lá nem cá. A gramática italiana tem até nome para esses três: <b><em>verbi servili</em></b>, os “verbos servos”. Eles carregam a conjugação sozinhos.</p>
+    <p class="destaque"><b>Portanto:</b> aprenda 3 verbos (e 2 coringas, <em>vorrei</em> e <em>mi piace</em>) e use todos os outros como estão no dicionário. A conjugação completa vem depois, quando você já estiver falando.</p>
+  </div>
+</section>
+
+<!-- 6. JÁ PASSEI POR ISSO -->
+<section class="escuro">
+  <div class="wrap">
+    <div class="historia">
+      <div class="retrato">
+        <img src="img/aleff-chapeu.jpg" alt="Aleff, do @straniero001" width="190" height="190" loading="lazy">
+        <p><b>Aleff</b>@straniero001</p>
+      </div>
+      <div class="historia-texto">
+        <span class="sobretitulo">Eu travava igual</span>
+        <h2>Entendia a mensagem. Na hora de responder, travava.</h2>
+        <p>Estudo italiano sozinho, aqui de Belo Horizonte. Lia texto, entendia vídeo, reconhecia a frase quando ela aparecia. Mas para montar uma frase minha, a cabeça parava.</p>
+        <p class="erro">Já escrevi <s>io vado leggere</s>, quando o certo era <b>vado a leggere</b>. Eu sabia a regra. Só não conseguia usar na hora.</p>
+        <p>O que destravou foi parar de esperar dominar a gramática e começar a usar o italiano com poucas estruturas fixas: combinar horário, fazer convite, mandar mensagem para amigos italianos. Com elas, eu já conseguia dizer o que precisava.</p>
+        <p>Em março de 2027 eu vou para Roma, e tenho família na Itália. Quero chegar conversando, não apontando para o cardápio. O Atalho é o caminho que eu queria ter recebido no primeiro dia.</p>
+        <p class="lema">“Parliamo tutto l'italiano che possiamo.”<small>Falamos todo o italiano que conseguimos. É o lema do meu grupo de estudo.</small></p>
+        <a class="prova-link" href="https://oaleffemanuel.github.io/biblioteca-italiana/" target="_blank" rel="noopener"><span class="n">222</span><span>obras em italiano no catálogo gratuito que eu organizei: a <b>Biblioteca Italiana</b>, do nível A1 à literatura ↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. COMO FUNCIONA -->
+<section class="cinza">
+  <div class="wrap-larga">
+    <div class="centro"><span class="sobretitulo">O que tem dentro</span>
+    <h2>Como funciona <span class="azul">O Atalho dos 3 Verbos</span></h2></div>
+    <div class="partes">
+      <div class="parte"><span class="etiqueta">Parte 1</span><h3>O Atalho</h3><p>A Tabela do Atalho: 5 verbos-chave × 50 verbos de ação, com negação e pergunta. Pronúncia escrita do jeito que se fala.</p></div>
+      <div class="parte"><span class="etiqueta">Parte 2</span><h3>O Plano de 21 Dias</h3><p>20 minutos por dia, com o exercício do dia pronto. Semana 1: montar frases. Semana 2: perguntar e se virar. Semana 3: falar de você.</p></div>
+      <div class="parte"><span class="etiqueta">Parte 3</span><h3>Depois do Atalho</h3><p>20 maneiras de continuar sozinho e como passar para a conjugação completa sem a sensação de recomeçar.</p></div>
+    </div>
+    <ol class="linha-tempo">
+      <li><b>Dia 1</b>Você grava 1 minuto falando as primeiras frases da tabela. Guarda e não ouve de novo.</li>
+      <li><b>Dia 7</b>Já monta frases com os 3 verbos e os 2 coringas, em voz alta, sem olhar a folha.</li>
+      <li><b>Dia 14</b>Pergunta, pede, combina e pede para repetir: restaurante, loja, rua e família.</li>
+      <li><b>Dia 21</b>Fala de você, dos seus planos e do que gosta, e ouve a gravação do dia 1 para comparar.</li>
+    </ol>
+    <div class="dia-mock" aria-label="Exemplo de um dia do plano">
+      <div class="cab-dia"><b>Dia 3 · devo</b><span>20 min</span></div>
+      <ol>
+        <li>Leia em voz alta as 10 frases do dia com <em>devo</em><small>devo andare, devo pagare, devo partire…</small></li>
+        <li>Troque o segundo verbo por 5 verbos da tabela<small>sem olhar a folha</small></li>
+        <li>Diga 3 frases sobre o seu dia de hoje<small>“Oggi devo lavorare.”</small></li>
+        <li>Grave 30 segundos no celular</li>
       </ol>
     </div>
+    <p class="dia-legenda">Exemplo de um dia do plano: você abre, faz e fecha. Sem aula para assistir.</p>
+    <p class="sem-titulo">O que você não vai precisar</p>
+    <div class="sem"><span>videoaula</span><span>decoreba de conjugação</span><span>horas livres</span><span>material caro</span></div>
+    <p class="centro sub" style="font-size:16px">Só 20 minutos, o celular e coragem para falar em voz alta sozinho.</p>
   </div>
 </section>
 
-<!-- BULLETS -->
-<section>
-  <div class="wrap">
-    <h2>O que você vai descobrir lá dentro</h2>
-    <ul class="bullets">
-      <li>Os 3 verbos que, colocados na frente de qualquer outro, dispensam a conjugação <small>(Parte 1)</small></li>
-      <li>O coringa educado que resolve boa parte das situações de uma viagem, do café à farmácia</li>
-      <li>Como transformar qualquer frase da tabela em pergunta sem mudar uma palavra</li>
-      <li>A frase de duas palavras para quando você não entendeu nada, sem voltar para o português</li>
-      <li>Por que os cursos começam pela conjugação, e por que isso faz tanta gente desistir na terceira semana</li>
-      <li>A gravação de 1 minuto do dia 1 que você só vai ouvir de novo no dia 21</li>
-      <li>Como pedir, perguntar o preço e pagar só com o que está numa única folha</li>
-      <li>Os 50 verbos de ação que mais aparecem no dia a dia, com a pronúncia escrita do jeito que se fala</li>
-      <li>O que fazer no dia em que você não tiver os 20 minutos, e por que pular um dia não quebra nada</li>
-      <li>Onde achar, de graça, um italiano para a sua primeira conversa curta</li>
-      <li>Como falar do que você gosta, do que quer e do que precisa fazer com verbos que você já sabe</li>
-      <li>Como sair do atalho para a conjugação completa depois do dia 21, sem a sensação de começar do zero</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CUSTOS RETIRADOS -->
-<section class="cinza">
-  <div class="wrap">
-    <h2 class="centro">O que você <span class="destaque-azul">não</span> vai precisar fazer</h2>
-    <div class="custos">
-      <div class="custo"><b>Assistir aula</b><span>É leitura curta e prática em voz alta. Cada dia ocupa uma ou duas páginas.</span></div>
-      <div class="custo"><b>Decorar tabela de conjugação</b><span>Você usa os verbos como estão no dicionário. A conjugação completa fica para depois.</span></div>
-      <div class="custo"><b>Ter horas livres</b><span>20 minutos por dia. São 7 horas no total, menos que uma temporada de série.</span></div>
-      <div class="custo"><b>Comprar material</b><span>Precisa de um celular para gravar e de um papel para escrever as frases.</span></div>
+<!-- 7b. SITUAÇÕES -->
+<section class="claro">
+  <div class="wrap-larga">
+    <div class="centro"><span class="sobretitulo">Na prática</span>
+    <h2>O que você consegue dizer com o atalho</h2>
+    <p class="sub">Todas montadas com os mesmos 3 verbos e 2 coringas.</p></div>
+    <div class="trilho">
+      <div class="situacao"><div class="topo"><b>01 / 08</b><span>situação</span></div><h3>Café</h3><p class="resolve"><b>Sem o atalho</b>Você aponta para o balcão e fala em inglês.</p><div class="diga"><b>Com o atalho</b><p>Vorrei un cappuccino, per favore.<small>Eu queria um cappuccino, por favor.</small></p><p>Posso pagare con la carta?<small>Posso pagar com cartão?</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>02 / 08</b><span>situação</span></div><h3>Restaurante</h3><p class="resolve"><b>Sem o atalho</b>O garçom chega e você fica olhando o cardápio.</p><div class="diga"><b>Com o atalho</b><p>Vorrei ordinare.<small>Eu queria pedir.</small></p><p>Posso avere il conto?<small>Posso ter a conta?</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>03 / 08</b><span>situação</span></div><h3>Estação</h3><p class="resolve"><b>Sem o atalho</b>Você não sabe onde comprar o bilhete e perde o trem.</p><div class="diga"><b>Com o atalho</b><p>Devo andare a Roma Termini.<small>Preciso ir para Roma Termini.</small></p><p>Dove posso comprare il biglietto?<small>Onde posso comprar o bilhete?</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>04 / 08</b><span>situação</span></div><h3>Hotel</h3><p class="resolve"><b>Sem o atalho</b>Chegou cedo e não sabe pedir para deixar a mala.</p><div class="diga"><b>Com o atalho</b><p>Vorrei fare il check-in.<small>Eu queria fazer o check-in.</small></p><p>Posso lasciare la valigia qui?<small>Posso deixar a mala aqui?</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>05 / 08</b><span>situação</span></div><h3>Loja</h3><p class="resolve"><b>Sem o atalho</b>Você gosta da peça, mas não pergunta nada.</p><div class="diga"><b>Com o atalho</b><p>Posso provare questa?<small>Posso provar esta?</small></p><p>Vorrei pagare in contanti.<small>Eu queria pagar em dinheiro.</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>06 / 08</b><span>situação</span></div><h3>Família</h3><p class="resolve"><b>Sem o atalho</b>A nonna fala com você e você só sorri.</p><div class="diga"><b>Com o atalho</b><p>Voglio imparare l'italiano per parlare con voi.<small>Quero aprender italiano para falar com vocês.</small></p><p>Mi piace ascoltare le vostre storie.<small>Eu gosto de ouvir as histórias de vocês.</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>07 / 08</b><span>situação</span></div><h3>Falar de você</h3><p class="resolve"><b>Sem o atalho</b>Perguntam o que você faz e você trava.</p><div class="diga"><b>Com o atalho</b><p>Mi piace leggere e viaggiare.<small>Eu gosto de ler e viajar.</small></p><p>Voglio visitare la Sicilia.<small>Quero visitar a Sicília.</small></p></div></div>
+      <div class="situacao"><div class="topo"><b>08 / 08</b><span>situação</span></div><h3>Não entendeu</h3><p class="resolve"><b>Sem o atalho</b>Falaram rápido e você volta para o português.</p><div class="diga"><b>Com o atalho</b><p>Può ripetere, per favore?<small>Pode repetir, por favor?</small></p><p>Può parlare più piano?<small>Pode falar mais devagar?</small></p></div></div>
     </div>
-    <p class="centro" style="margin-top:24px;color:var(--suave)">O que você vai precisar, sim: falar em voz alta, sozinho, por 20 minutos. É isso que faz o atalho virar fala.</p>
+    <p class="arraste">Arraste para o lado →</p>
+    <div class="cta-bloco"><a class="cta" href="#oferta">Quero falar assim</a></div>
   </div>
 </section>
 
-<!-- PARA QUEM -->
-<section>
+<!-- 8. BULLETS -->
+<section class="escuro com-foto">
+  <img class="fundo" src="img/italia/cinque-terre.jpg" alt="" loading="lazy" width="1024" height="576">
+  <div class="wrap">
+    <span class="sobretitulo">Um pouco do que tem lá dentro</span>
+    <h2>O que você vai descobrir</h2>
+    <ul class="bullets">
+      <li>Os <b>3 verbos</b> que, na frente de qualquer outro, dispensam a conjugação</li>
+      <li>O <b>coringa educado</b> que abre quase todo pedido em restaurante, loja e hotel</li>
+      <li>Como virar qualquer frase da tabela em <b>pergunta sem trocar uma palavra</b></li>
+      <li>As <b>2 palavras</b> para quando você não entendeu nada, sem voltar para o português</li>
+      <li>O <b>“a” esquecido</b> que quase todo brasileiro engole depois de <em>andare</em>, e como nunca mais errar</li>
+      <li>A <b>gravação de 1 minuto</b> do dia 1 que você só ouve de novo no dia 21</li>
+      <li>Onde achar, <b>de graça</b>, um italiano para a sua primeira conversa curta</li>
+    </ul>
+    <div class="perfis">
+      <div class="perfil"><h3>Nunca estudou italiano?</h3><p>A tabela começa do zero, com tradução e pronúncia. Você fala a primeira frase no dia 1.</p></div>
+      <div class="perfil"><h3>Já estuda há anos e trava?</h3><p>Você usa o vocabulário que já tem, só que montando frases em vez de conjugando listas.</p></div>
+    </div>
+    <div class="cta-bloco"><a class="cta" href="#oferta">Quero começar pelo atalho</a></div>
+  </div>
+</section>
+
+<!-- 9. PARA QUEM -->
+<section class="claro">
   <div class="wrap">
     <h2 class="centro">Para quem é, e para quem não é</h2>
     <div class="duas">
       <ul class="lista-sim">
-        <li class="lista-titulo" style="list-style:none">É para você que:</li>
+        <li class="lista-titulo">É para você que:</li>
         <li>Já tentou app, curso ou vídeo e trava na hora de falar</li>
         <li>Está começando do zero e quer falar logo, não só ler</li>
-        <li>Quer o italiano por causa das raízes, da cidadania, de uma viagem ou da cultura</li>
+        <li>Quer o italiano pelas raízes, pela cidadania, por uma viagem ou pela cultura</li>
         <li>Tem 20 minutos por dia e topa falar em voz alta</li>
       </ul>
       <ul class="lista-nao">
-        <li class="lista-titulo" style="list-style:none">Não é para você que:</li>
+        <li class="lista-titulo">Não é para você que:</li>
         <li>Quer fluência em 21 dias (ninguém entrega isso com honestidade)</li>
         <li>Precisa de preparatório para prova de proficiência</li>
         <li>Não quer falar em voz alta sozinho</li>
       </ul>
     </div>
+    <div class="cta-bloco"><a class="cta" href="#oferta">É pra mim. Quero o atalho</a></div>
   </div>
 </section>
 
-<!-- OFERTA -->
+<!-- 10. OFERTA -->
 <section class="oferta" id="oferta">
   <div class="wrap">
-    <span class="kicker kicker-escuro">Tudo o que você recebe hoje</span>
-    <h2 class="centro">O Atalho dos 3 Verbos <span class="destaque-verde">+ 6 bônus</span></h2>
+    <div class="centro"><span class="sobretitulo">Tudo o que você recebe hoje</span>
+    <h2>O Atalho dos 3 Verbos <span class="verde">+ 6 bônus</span></h2></div>
 
     <div class="principal">
       <div class="capa capa-principal"><img class="capa-icone" src="icone.svg" alt="" width="40" height="40"><b>O Atalho dos 3 Verbos</b><small>Tabela + Plano de 21 Dias</small></div>
@@ -439,21 +671,21 @@ footer p + p { margin-top: 10px; }
         <p class="rotulo">Produto principal</p>
         <h3>O Atalho dos 3 Verbos</h3>
         <ul class="mini">
-          <li>Parte 1: a Tabela do Atalho (5 × 50 = 250 frases, com pronúncia)</li>
+          <li>Parte 1: a Tabela do Atalho (250 frases, com pronúncia)</li>
           <li>Parte 2: o Plano de 21 Dias, 20 minutos por dia</li>
-          <li>Parte 3: 20 maneiras de continuar estudando sozinho</li>
+          <li>Parte 3: 20 maneiras de continuar sozinho</li>
         </ul>
         <p class="valor">Valor de referência: <s>R$ 197</s></p>
       </div>
     </div>
 
     <div class="bonus-grade">
-      <div class="bonus-card"><div class="capa capa-b1"><b>Kit Viagem</b><small>80 frases</small></div><div><span class="bonus-tag">Bônus #1</span><h3>Kit Viagem: 80 frases prontas para a Itália</h3><p>Restaurante, hotel, estação, farmácia e loja, todas montadas com o atalho e com a pronúncia escrita. Para ler no celular na hora do aperto.</p><p class="valor">Valor: <s>R$ 74,90</s> <b>grátis</b></p></div></div>
-      <div class="bonus-card"><div class="capa capa-b2"><b>Sotaque</b><small>7 sons</small></div><div><span class="bonus-tag">Bônus #2</span><h3>Os 7 sons que entregam o sotaque brasileiro</h3><p><em>gli</em>, <em>gn</em>, <em>ci/chi</em>, <em>sc</em>, as consoantes dobradas e as vogais abertas. O que muda na boca, com palavras para treinar.</p><p class="valor">Valor: <s>R$ 37</s> <b>grátis</b></p></div></div>
-      <div class="bonus-card"><div class="capa capa-b3"><b>Falsos Amigos</b><small>100 palavras</small></div><div><span class="bonus-tag">Bônus #3</span><h3>100 falsos amigos do italiano</h3><p>Por que <em>burro</em> é manteiga, <em>salire</em> é subir e <em>guardare</em> é olhar. As palavras que parecem português e fazem você dizer outra coisa.</p><p class="valor">Valor: <s>R$ 27</s> <b>grátis</b></p></div></div>
-      <div class="bonus-card"><div class="capa capa-b4"><b>1ª Conversa</b><small>roteiro</small></div><div><span class="bonus-tag">Bônus #4</span><h3>Roteiro da primeira conversa</h3><p>O que dizer nos primeiros 10 minutos com um italiano de verdade, o que fazer quando não entender e onde achar alguém para conversar de graça.</p><p class="valor">Valor: <s>R$ 47</s> <b>grátis</b></p></div></div>
-      <div class="bonus-card"><div class="capa capa-b5"><b>Tabela de Bolso</b><small>imprimir + celular</small></div><div><span class="bonus-tag">Bônus #5</span><h3>Tabela de bolso + papel de parede</h3><p>A Tabela do Atalho em versão para imprimir e em papel de parede para a tela do celular. Você vê as frases toda vez que desbloqueia.</p><p class="valor">Valor: <s>R$ 17</s> <b>grátis</b></p></div></div>
-      <div class="bonus-card destaque-prazo"><div class="capa capa-b6"><b>Italiano Sozinho em 30 Dias</b><small>~100 páginas</small></div><div><span class="bonus-tag bonus-tag-prazo">Bônus #6 · só até 31/12</span><h3>Italiano Sozinho em 30 Dias</h3><p>O plano de continuação para depois do dia 21: um mês inteiro de estudo sozinho, dia a dia. Sai da oferta em 31/12.</p><p class="valor">Valor: <s>R$ 67</s> <b>grátis</b></p></div></div>
+      <div class="bonus-card"><div class="capa capa-b1"><b>Kit Viagem</b><small>80 frases</small></div><div><span class="bonus-tag">Bônus #1</span><h3>Kit Viagem: 80 frases prontas para a Itália</h3><p>Restaurante, hotel, estação, farmácia e loja, todas montadas com o atalho e com a pronúncia escrita.</p><p class="valor">Valor: <s>R$ 74,90</s> <b>grátis</b></p></div></div>
+      <div class="bonus-card"><div class="capa capa-b2"><b>Sotaque</b><small>7 sons</small></div><div><span class="bonus-tag">Bônus #2</span><h3>Os 7 sons que entregam o sotaque brasileiro</h3><p><em>gli</em>, <em>gn</em>, <em>ci/chi</em>, <em>sc</em>, as consoantes dobradas e as vogais abertas, com palavras para treinar.</p><p class="valor">Valor: <s>R$ 37</s> <b>grátis</b></p></div></div>
+      <div class="bonus-card"><div class="capa capa-b3"><b>Falsos Amigos</b><small>100 palavras</small></div><div><span class="bonus-tag">Bônus #3</span><h3>100 falsos amigos do italiano</h3><p>Por que <em>burro</em> é manteiga, <em>salire</em> é subir e <em>guardare</em> é olhar.</p><p class="valor">Valor: <s>R$ 27</s> <b>grátis</b></p></div></div>
+      <div class="bonus-card"><div class="capa capa-b4"><b>1ª Conversa</b><small>roteiro</small></div><div><span class="bonus-tag">Bônus #4</span><h3>Roteiro da primeira conversa</h3><p>O que dizer nos primeiros 10 minutos com um italiano, o que fazer quando não entender e onde achar alguém de graça.</p><p class="valor">Valor: <s>R$ 47</s> <b>grátis</b></p></div></div>
+      <div class="bonus-card"><div class="capa capa-b5"><b>Tabela de Bolso</b><small>imprimir + celular</small></div><div><span class="bonus-tag">Bônus #5</span><h3>Tabela de bolso + papel de parede</h3><p>A tabela para imprimir e como papel de parede do celular: você vê as frases toda vez que desbloqueia.</p><p class="valor">Valor: <s>R$ 17</s> <b>grátis</b></p></div></div>
+      <div class="bonus-card destaque-prazo"><div class="capa capa-b6"><b>Italiano Sozinho em 30 Dias</b><small>~100 páginas</small></div><div><span class="bonus-tag bonus-tag-prazo">Bônus #6 · só até 31/12</span><h3>Italiano Sozinho em 30 Dias</h3><p>O plano de continuação para depois do dia 21: um mês inteiro, dia a dia. Sai da oferta em 31/12.</p><p class="valor">Valor: <s>R$ 67</s> <b>grátis</b></p></div></div>
     </div>
 
     <div class="cartao">
@@ -481,87 +713,92 @@ footer p + p { margin-top: 10px; }
   </div>
 </section>
 
-<!-- GARANTIA -->
-<section>
+<!-- 11. GARANTIA -->
+<section class="cinza">
   <div class="wrap">
     <div class="garantia">
       <div class="selo"><div><span>30</span><small>dias</small></div></div>
       <div>
         <h3>Faça os 21 dias. Se não estiver montando e falando suas frases, devolvemos o seu dinheiro.</h3>
-        <p style="margin-top:10px;color:var(--suave)">A garantia é de 30 dias, mais longa que o próprio plano, para você ter tempo de chegar ao dia 21 antes de decidir. É só pedir pelo e-mail de suporte: sem formulário e sem pergunta.</p>
+        <p style="margin-top:10px;color:var(--suave)">A garantia é de 30 dias, mais longa que o próprio plano, para você chegar ao dia 21 antes de decidir. É só pedir pelo e-mail de suporte: sem formulário e sem pergunta.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="cinza">
-  <div class="wrap">
-    <h2 class="centro">Perguntas frequentes</h2>
-    <div style="margin-top:22px">
-      <details><summary>Sou zero em italiano. Funciona para mim?</summary><p>Funciona. A tabela começa do zero, com a tradução e a pronúncia de cada verbo.</p></details>
-      <details><summary>Já estudo italiano há um tempo. Vou perder tempo?</summary><p>É justamente para quem já estudou e trava na hora de falar. Você vai usar o que já sabe de vocabulário, só que montando frases em vez de conjugando listas.</p></details>
-      <details><summary>Então nunca vou aprender a conjugar?</summary><p>Vai, mas na hora certa. A Parte 3 mostra como passar do atalho para a conjugação completa depois do dia 21, quando você já fala as primeiras frases.</p></details>
-      <details><summary>Tem áudio?</summary><p>A pronúncia vem escrita do jeito que se fala, para você não depender de áudio. No checkout há um complemento opcional de treino de ouvido.</p></details>
-      <details><summary>Como recebo?</summary><p>Logo depois do pagamento aprovado, você recebe o acesso por e-mail. Pode ler no celular, no computador ou imprimir.</p></details>
-      <details><summary>E se eu não gostar?</summary><p>Você tem 30 dias de garantia. Pediu, devolvemos o valor integral.</p></details>
+<!-- 12. TRÊS OPÇÕES -->
+<section class="claro">
+  <div class="wrap-larga">
+    <div class="centro"><span class="sobretitulo">Daqui a 21 dias</span>
+    <h2>A Itália continua lá. A diferença é você chegar falando.</h2></div>
+    <div class="mosaico">
+      <figure><img src="img/italia/coliseu.jpg" alt="Coliseu, Roma" loading="lazy" width="1024" height="683"><figcaption>Roma</figcaption></figure>
+      <figure><img src="img/italia/veneza.jpg" alt="Canal em Veneza" loading="lazy" width="960" height="640"><figcaption>Veneza</figcaption></figure>
+      <figure><img src="img/italia/florenca.jpg" alt="Florença vista do alto" loading="lazy" width="1024" height="683"><figcaption>Florença</figcaption></figure>
+      <figure><img src="img/italia/toscana.jpg" alt="Colinas da Toscana" loading="lazy" width="1024" height="658"><figcaption>Toscana</figcaption></figure>
+      <figure><img src="img/italia/milao.jpg" alt="Rua em Milão ao entardecer" loading="lazy" width="1024" height="683"><figcaption>Milão</figcaption></figure>
     </div>
   </div>
-</section>
-
-<!-- FECHAMENTO -->
-<section>
-  <div class="wrap">
+  <div class="wrap" style="margin-top:64px">
     <h2 class="centro">A partir daqui, você tem três caminhos</h2>
     <div class="opcoes">
-      <div class="opcao"><span class="num">Opção 1</span><h3>Não fazer nada</h3><p>Continuar no aplicativo, manter a sequência do dia e travar de novo na próxima vez que precisar falar.</p></div>
-      <div class="opcao"><span class="num">Opção 2</span><h3>Ir pelo caminho tradicional</h3><p>Decorar as seis formas de cada verbo, tempo por tempo, e só começar a falar quando terminar. Funciona para algumas pessoas. É também onde a maioria desiste.</p></div>
-      <div class="opcao escolha"><span class="num">Opção 3</span><h3>Começar pelo atalho</h3><p>3 verbos, 21 dias, 20 minutos por dia. Você começa a montar e falar as suas frases na primeira semana, com 30 dias de garantia.</p></div>
+      <div class="opcao"><span class="etiqueta">Opção 1</span><h3>Não fazer nada</h3><p>Continuar no aplicativo, manter a sequência do dia e travar de novo na próxima vez que precisar falar.</p></div>
+      <div class="opcao"><span class="etiqueta">Opção 2</span><h3>O caminho tradicional</h3><p>Decorar as seis formas de cada verbo, tempo por tempo, e só falar quando terminar. É onde a maioria desiste.</p></div>
+      <div class="opcao escolha"><span class="etiqueta">Opção 3</span><h3>Começar pelo atalho</h3><p>3 verbos, 21 dias, 20 minutos por dia. Você monta e fala as suas frases já na primeira semana, com 30 dias de garantia.</p></div>
     </div>
     <p class="pergunta">Qual vai ser mais fácil para você?</p>
-    <p class="sub centro">Daqui a 21 dias, você pode estar ouvindo a própria voz montando frases em italiano. Ou abrindo o aplicativo de novo para conjugar <em>mangiare</em> nas seis pessoas.</p>
     <div class="cta-bloco"><a class="cta" href="#oferta">Quero o atalho por R$ 67</a>
       <div class="selos"><span>🔒 Compra segura</span><span>🛡️ Garantia de 30 dias</span></div>
     </div>
   </div>
 </section>
 
+<!-- 13. FAQ -->
+<section class="cinza">
+  <div class="wrap">
+    <h2 class="centro">Perguntas frequentes</h2>
+    <div style="margin-top:22px">
+      <details><summary>Sou zero em italiano. Funciona para mim?</summary><p>Funciona. A tabela começa do zero, com a tradução e a pronúncia de cada verbo.</p></details>
+      <details><summary>Tenho mais de 50 anos. Consigo?</summary><p>Consegue. O atalho existe justamente para não depender de decorar tabelas. São 20 minutos por dia, com a tabela para imprimir em letra grande e a pronúncia escrita em português.</p></details>
+      <details><summary>Já tentei de tudo e parei. Por que agora seria diferente?</summary><p>Porque desta vez você começa falando, e não conjugando. Cada dia tem só o exercício daquele dia, e a gravação do dia 1 mostra, no dia 21, o quanto você andou.</p></details>
+      <details><summary>Não tenho tempo.</summary><p>São 20 minutos por dia, 7 horas no total, menos que uma temporada de série. Se pular um dia, você continua de onde parou.</p></details>
+      <details><summary>É só um PDF?</summary><p>É material de leitura e prática, entregue na área de membros: você lê no celular, imprime a tabela e pratica em voz alta. Não tem videoaula, de propósito: o tempo vai para você falar, e não para assistir.</p></details>
+      <details><summary>Então nunca vou aprender a conjugar?</summary><p>Vai, na hora certa. A Parte 3 mostra como passar do atalho para a conjugação completa depois do dia 21, quando você já fala as primeiras frases.</p></details>
+      <details><summary>Tem áudio?</summary><p>A pronúncia vem escrita do jeito que se fala. No checkout há um complemento opcional de treino de ouvido.</p></details>
+      <details><summary>Como recebo?</summary><p>Logo depois do pagamento aprovado, você recebe o acesso por e-mail.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 30 dias de garantia. Pediu, devolvemos o valor integral.</p></details>
+    </div>
+    <div class="cta-bloco"><a class="cta" href="#oferta">Quero o atalho + 6 bônus</a></div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
-    <p><img src="icone.svg" alt="" width="28" height="28" style="vertical-align:middle;border-radius:6px;margin-right:6px">O Atalho dos 3 Verbos · Leffo</p>
+    <p><img src="icone.svg" alt="" width="28" height="28" style="display:inline-block;vertical-align:middle;border-radius:6px;margin-right:6px">O Atalho dos 3 Verbos · Leffo</p>
     <p><a href="../privacidade.html">Política de privacidade</a></p>
+    <p>Fotos da Itália: domínio público (CC0), via rawpixel e StockSnap.</p>
     <p>Este produto não garante fluência. O resultado depende da prática diária descrita no plano.</p>
     <p>Este site não faz parte do site do Facebook ou da Meta Platforms, Inc. e não é endossado por eles.</p>
   </div>
 </footer>
 
+<!-- barra fixa de compra (celular) -->
+<div class="fixa" id="fixa" aria-hidden="true">
+  <div class="fixa-preco"><b>R$ 67</b><small>+ 6 bônus · garantia de 30 dias</small></div>
+  <a class="cta" href="#oferta" tabindex="-1">Quero o atalho</a>
+</div>
+
 <script>
-  // Demonstração: verbo-chave + verbo do dicionário (o segundo nunca muda)
+  // Barra fixa: aparece depois do topo e some quando a oferta está na tela.
   (function () {
-    const CHAVE = [["Voglio","VÓ-lho","Eu quero"],["Posso","PÓS-so","Eu posso"],["Devo","DÊ-vo","Eu preciso"],["Vorrei","vor-RÊI","Eu gostaria de"],["Mi piace","mi PIÁ-tche","Eu gosto de"]];
-    const ACAO = [["mangiare","man-DJA-re","comer"],["pagare","pa-GA-re","pagar"],["andare","an-DA-re","ir"],["parlare","par-LA-re","falar"],["dormire","dor-MI-re","dormir"],["comprare","com-PRA-re","comprar"],["bere","BÊ-re","beber"],["viaggiare","via-DJA-re","viajar"]];
-    let k = 0, a = 0; const vistas = new Set(["0-0"]);
-    const el = id => document.getElementById(id);
-    function chips(grupo, lista, sel) {
-      const box = document.querySelector('.chips[data-grupo="' + grupo + '"]');
-      lista.forEach((v, i) => {
-        const b = document.createElement("button");
-        b.type = "button"; b.className = "chip"; b.textContent = v[0].toLowerCase();
-        b.setAttribute("aria-pressed", i === 0);
-        b.addEventListener("click", () => { box.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === b)); sel(i); mostra(); });
-        box.appendChild(b);
-      });
-    }
-    function mostra() {
-      vistas.add(k + "-" + a);
-      el("res-it").innerHTML = '<span class="k">' + CHAVE[k][0] + '</span> <span class="a">' + ACAO[a][0] + '</span>';
-      el("res-pron").textContent = CHAVE[k][1] + " " + ACAO[a][1];
-      el("res-pt").textContent = CHAVE[k][2] + " " + ACAO[a][2];
-      el("contador").textContent = vistas.size;
-    }
-    chips("chave", CHAVE, i => k = i);
-    chips("acao", ACAO, i => a = i);
-    mostra();
+    const fixa = document.getElementById("fixa");
+    const hero = document.querySelector(".hero");
+    const oferta = document.getElementById("oferta");
+    if (!("IntersectionObserver" in window)) return;
+    let passouTopo = false, naOferta = false;
+    const atualiza = () => fixa.classList.toggle("visivel", passouTopo && !naOferta);
+    new IntersectionObserver(([e]) => { passouTopo = !e.isIntersecting; atualiza(); }).observe(hero);
+    new IntersectionObserver(([e]) => { naOferta = e.isIntersecting; atualiza(); }, { threshold: 0.05 }).observe(oferta);
   })();
 
   // Link do checkout da Kiwify (preencher quando o produto for criado). Os utm_* da visita seguem para o checkout.
