@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Benvenuto! · O Atalho dos 3 Verbos</title>
+<meta name="theme-color" content="#07090f">
+<link rel="icon" href="../icone.svg" type="image/svg+xml">
+<link rel="icon" href="../icone-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+@font-face { font-family: "Space Grotesk"; src: url("../fonts/SpaceGrotesk.woff2") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/Inter.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+:root { --tinta: #0f172a; --suave: #475569; --preto: #07090f; --fundo: #f4f6fa; --verde: #0f9d58; --verde-claro: #4ade80; --azul: #1d4ed8; --linha: #e2e8f0; --ouro: #ffd43b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; font-size: 17px; line-height: 1.6; color: var(--tinta); background: var(--fundo); -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { font-family: "Space Grotesk", "Inter", Arial, sans-serif; letter-spacing: -.02em; line-height: 1.1; text-wrap: balance; }
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 18px; }
+.topo { background: radial-gradient(120% 80% at 50% 0%, #16244a 0%, var(--preto) 60%); color: #d6dde9; text-align: center; padding: 48px 0 56px; }
+.marca { display: inline-flex; align-items: center; gap: 8px; font: 700 15px "Space Grotesk", sans-serif; color: #fff; }
+.marca img { width: 30px; height: 30px; border-radius: 7px; }
+.ok { width: 72px; height: 72px; border-radius: 50%; background: var(--verde); display: grid; place-items: center; margin: 30px auto 18px; box-shadow: 0 0 0 10px rgba(15,157,88,.18); }
+.ok svg { width: 36px; height: 36px; }
+.topo h1 { color: #fff; font-size: clamp(30px, 8vw, 44px); }
+.topo h1 span { color: var(--verde-claro); }
+.topo p { margin-top: 12px; color: #b8c3d6; }
+.email { background: #fff; border: 2px solid var(--verde); border-radius: 18px; padding: 20px; margin-top: -30px; position: relative; box-shadow: 0 20px 40px rgba(15,23,42,.12); }
+.email h2 { font-size: 21px; }
+.email p { font-size: 16px; color: var(--suave); margin-top: 6px; }
+.email b { color: var(--tinta); }
+section { padding: 40px 0 0; }
+.rotulo { display: inline-block; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; color: var(--azul); margin-bottom: 8px; }
+section h2 { font-size: clamp(24px, 6vw, 30px); }
+.passos { list-style: none; counter-reset: p; margin-top: 18px; display: grid; gap: 12px; }
+.passos li { counter-increment: p; background: #fff; border: 1px solid var(--linha); border-radius: 14px; padding: 16px 16px 16px 60px; position: relative; font-size: 16px; color: var(--suave); }
+.passos li::before { content: counter(p); position: absolute; left: 16px; top: 16px; width: 30px; height: 30px; border-radius: 50%; background: var(--azul); color: #fff; display: grid; place-items: center; font: 700 15px "Space Grotesk", sans-serif; }
+.passos b { display: block; color: var(--tinta); font-size: 17px; }
+.it { font-family: "Space Grotesk", sans-serif; font-weight: 700; color: var(--tinta); }
+.carta { background: #fff; border: 1px solid var(--linha); border-radius: 18px; padding: 22px; margin-top: 18px; display: grid; grid-template-columns: 64px 1fr; gap: 16px; align-items: start; }
+.carta img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.carta p { font-size: 16px; color: var(--suave); }
+.carta p + p { margin-top: 10px; }
+.carta .ass { color: var(--tinta); font-weight: 700; }
+.ajuda { margin: 40px 0 0; padding: 28px 0 48px; border-top: 1px solid var(--linha); font-size: 15px; color: var(--suave); text-align: center; }
+.ajuda a { color: var(--azul); font-weight: 600; }
+.ajuda p + p { margin-top: 8px; }
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <span class="marca"><img src="../icone.svg" alt="" width="30" height="30">O Atalho dos 3 Verbos</span>
+    <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h1>Compra confirmada. <span>Benvenuto!</span></h1>
+    <p>Você acabou de dar o primeiro passo para falar italiano de verdade.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="email">
+    <h2>📩 Seu acesso está no seu e-mail</h2>
+    <p>A Kiwify manda o acesso à área de membros para o <b>mesmo e-mail que você usou na compra</b>, em poucos minutos. Não achou? Olhe nas abas <b>Promoções</b> e <b>Spam</b>.</p>
+  </div>
+
+  <section>
+    <span class="rotulo">Il primo giorno</span>
+    <h2>Comece hoje: o seu dia 1 leva 20 minutos</h2>
+    <ol class="passos">
+      <li><b>Abra a Parte 1 e salve a Tabela do Atalho</b>Imprima ou deixe no celular. É a folha que você vai usar nos 21 dias.</li>
+      <li><b>Leia em voz alta a linha do <span class="it">voglio</span></b>Devagar, seguindo a pronúncia escrita: <span class="it">voglio mangiare, voglio pagare, voglio andare…</span></li>
+      <li><b>Grave 1 minuto no celular</b>Fale as frases que conseguir. Guarde a gravação e não ouça de novo: ela é para o dia 21.</li>
+    </ol>
+  </section>
+
+  <section>
+    <span class="rotulo">Ci sentiamo</span>
+    <h2>Daqui a 21 dias, eu falo com você</h2>
+    <div class="carta">
+      <img src="../img/aleff-chapeu.jpg" alt="Aleff, do @straniero001" width="64" height="64">
+      <div>
+        <p>Obrigado pela confiança. Eu fiz o Atalho porque travava do mesmo jeito, e quero saber como foi para você.</p>
+        <p>Perto do dia 21, vou te mandar uma mensagem por WhatsApp ou e-mail. Se puder, me responda contando o que mudou: a sua resposta me ajuda a melhorar o material para quem vem depois.</p>
+        <p class="ass">Aleff · @straniero001</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ajuda">
+    <p>Alguma dúvida ou problema com o acesso? Escreva para <a href="mailto:aleff@korium.co">aleff@korium.co</a>.</p>
+    <p>Você tem 30 dias de garantia: se não gostar, é só pedir pelo mesmo e-mail.</p>
+    <p>Para praticar todo dia: <a href="https://www.instagram.com/straniero001/" target="_blank" rel="noopener">@straniero001</a> no Instagram.</p>
+  </div>
+</main>
+</body>
+</html>
