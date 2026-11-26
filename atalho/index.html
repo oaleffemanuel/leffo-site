@@ -494,6 +494,15 @@ body.sem-rolagem { overflow: hidden; }
 .saida-nao { margin-top: 10px; background: none; border: 0; color: #8b978e; font-size: 13px; text-decoration: underline; cursor: pointer; padding: 6px; }
 @media (prefers-reduced-motion: reduce) { .saida { animation: none; } }
 </style>
+<!-- Meta Pixel (Straniero – Atalho) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1111932678472037');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1111932678472037&ev=PageView&noscript=1"></noscript>
 </head>
 <body>
 
@@ -1014,6 +1023,22 @@ body.sem-rolagem { overflow: hidden; }
       const u = new URL(url);
       if (a.dataset.src) u.searchParams.set("src", a.dataset.src);
       a.href = u.toString();
+    });
+  })();
+  // Pixel: ViewContent quando a oferta aparece (1x); clique no botão de compra vira evento próprio.
+  // InitiateCheckout e Purchase ficam com a Kiwify (pixel + API de Conversões do produto), para não contar em dobro.
+  (function () {
+    if (!window.fbq) return;
+    const oferta = document.getElementById("oferta");
+    if (oferta && "IntersectionObserver" in window) {
+      const ob = new IntersectionObserver(([e]) => {
+        if (e.isIntersecting) { fbq("track", "ViewContent", { content_name: "O Atalho dos 3 Verbos", value: 67, currency: "BRL" }); ob.disconnect(); }
+      }, { threshold: 0.05 });
+      ob.observe(oferta);
+    }
+    document.addEventListener("click", e => {
+      const a = e.target.closest("[data-checkout]");
+      if (a) fbq("trackCustom", "CliqueCheckout", { origem: a.dataset.src || "pagina" });
     });
   })();
 </script>
